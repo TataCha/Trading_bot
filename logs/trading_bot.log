@@ -1,0 +1,120 @@
+[2026-08-07 17:00:56] [INFO] [TradingBot]: Initializing Algorithmic Day Trading Engine (Multi-Strategy Asset Router)...
+[2026-08-07 17:00:56] [INFO] [TradingBot]: Mode: PAPER | Base URL: https://paper-api.alpaca.markets
+[2026-08-07 17:00:56] [INFO] [TradingBot]: Symbol Routing: AAPL -> Strategy [VWAP_Breakout]
+[2026-08-07 17:00:56] [INFO] [TradingBot]: Symbol Routing: NVDA -> Strategy [RSI_MeanReversion]
+[2026-08-07 17:00:56] [INFO] [TradingBot]: Symbol Routing: MSFT -> Strategy [MA_Crossover]
+[2026-08-07 17:00:56] [INFO] [TradingBot]: Symbol Routing: AMD -> Strategy [MA_Crossover]
+[2026-08-07 17:00:56] [INFO] [TradingBot]: Symbol Routing: DRAM -> Strategy [RSI_MeanReversion]
+[2026-08-07 17:00:56] [INFO] [TradingBot]: Symbol Routing: TSM -> Strategy [RSI_MeanReversion]
+[2026-08-07 17:00:57] [INFO] [TradingBot]: Connected to Alpaca Account. Equity: $100,000.00
+[2026-08-07 17:00:58] [INFO] [TradingBot.DataCollector]: Fetched 259 historical bars for AAPL (15Min)
+[2026-08-07 17:00:59] [INFO] [TradingBot.DataCollector]: Fetched 248 historical bars for NVDA (15Min)
+[2026-08-07 17:01:00] [INFO] [TradingBot.DataCollector]: Fetched 251 historical bars for MSFT (15Min)
+[2026-08-07 17:01:01] [INFO] [TradingBot.DataCollector]: Fetched 232 historical bars for AMD (15Min)
+[2026-08-07 17:01:03] [INFO] [TradingBot.DataCollector]: Fetched 254 historical bars for DRAM (15Min)
+[2026-08-07 17:01:03] [INFO] [TradingBot.DataCollector]: Fetched 228 historical bars for TSM (15Min)
+[2026-08-07 17:01:03] [INFO] [TradingBot]: Warm-up historical candles loaded successfully.
+[2026-08-07 17:01:03] [INFO] [TradingBot]: Starting live market data stream subscriber...
+[2026-08-07 17:01:03] [INFO] [TradingBot.DataCollector]: Subscribing to real-time stream for symbols: ['AAPL', 'NVDA', 'MSFT', 'AMD', 'DRAM', 'TSM']
+[2026-08-07 17:01:04] [INFO] [TradingBot.DataCollector]: Alpaca WebSocket stream connected.
+[2026-08-07 17:01:04] [INFO] [TradingBot.HealthMonitor]: Health monitor service started (Interval: 60 minutes)
+[2026-08-07 19:45:26] [INFO] [TradingBot]: Initializing Algorithmic Day Trading Engine (Multi-Strategy Asset Router)...
+[2026-08-07 19:45:26] [INFO] [TradingBot]: Mode: PAPER | Base URL: https://paper-api.alpaca.markets
+[2026-08-07 19:45:26] [INFO] [TradingBot]: Symbol Routing: AAPL -> Strategy [VWAP_Breakout]
+[2026-08-07 19:45:26] [INFO] [TradingBot]: Symbol Routing: NVDA -> Strategy [RSI_MeanReversion]
+[2026-08-07 19:45:26] [INFO] [TradingBot]: Symbol Routing: MSFT -> Strategy [MA_Crossover]
+[2026-08-07 19:45:26] [INFO] [TradingBot]: Symbol Routing: AMD -> Strategy [MA_Crossover]
+[2026-08-07 19:45:26] [INFO] [TradingBot]: Symbol Routing: DRAM -> Strategy [RSI_MeanReversion]
+[2026-08-07 19:45:26] [INFO] [TradingBot]: Symbol Routing: TSM -> Strategy [RSI_MeanReversion]
+[2026-08-07 19:45:27] [INFO] [TradingBot]: Connected to Alpaca Account. Equity: $100,000.00
+[2026-08-07 19:45:28] [INFO] [TradingBot.DataCollector]: Fetched 259 historical bars for AAPL (15Min)
+[2026-08-07 19:45:29] [INFO] [TradingBot.DataCollector]: Fetched 248 historical bars for NVDA (15Min)
+[2026-08-07 19:45:30] [INFO] [TradingBot.DataCollector]: Fetched 251 historical bars for MSFT (15Min)
+[2026-08-07 19:45:31] [INFO] [TradingBot.DataCollector]: Fetched 232 historical bars for AMD (15Min)
+[2026-08-07 19:45:32] [INFO] [TradingBot.DataCollector]: Fetched 254 historical bars for DRAM (15Min)
+[2026-08-07 19:45:33] [INFO] [TradingBot.DataCollector]: Fetched 228 historical bars for TSM (15Min)
+[2026-08-07 19:45:33] [INFO] [TradingBot]: Warm-up historical candles loaded successfully.
+[2026-08-07 19:45:33] [INFO] [TradingBot]: Starting live market data stream subscriber...
+[2026-08-07 19:45:33] [INFO] [TradingBot.DataCollector]: Subscribing to real-time stream for symbols: ['AAPL', 'NVDA', 'MSFT', 'AMD', 'DRAM', 'TSM']
+[2026-08-07 19:45:33] [INFO] [TradingBot.DataCollector]: Alpaca WebSocket stream connected.
+[2026-08-07 19:45:33] [INFO] [TradingBot.HealthMonitor]: Health monitor service started (Interval: 60 minutes)
+[2026-08-07 19:48:22] [INFO] [TradingBot]: Initializing Algorithmic Day Trading Engine (Multi-Strategy Asset Router)...
+[2026-08-07 19:48:22] [INFO] [TradingBot]: Mode: PAPER | Base URL: https://paper-api.alpaca.markets
+[2026-08-07 19:48:22] [INFO] [TradingBot]: Symbol Routing: AAPL -> Strategy [VWAP_Breakout]
+[2026-08-07 19:48:22] [INFO] [TradingBot]: Symbol Routing: NVDA -> Strategy [RSI_MeanReversion]
+[2026-08-07 19:48:22] [INFO] [TradingBot]: Symbol Routing: MSFT -> Strategy [MA_Crossover]
+[2026-08-07 19:48:22] [INFO] [TradingBot]: Symbol Routing: AMD -> Strategy [MA_Crossover]
+[2026-08-07 19:48:22] [INFO] [TradingBot]: Symbol Routing: DRAM -> Strategy [RSI_MeanReversion]
+[2026-08-07 19:48:22] [INFO] [TradingBot]: Symbol Routing: TSM -> Strategy [RSI_MeanReversion]
+[2026-08-07 19:48:23] [INFO] [TradingBot]: Connected to Alpaca Account. Equity: $100,000.00
+[2026-08-07 19:48:24] [INFO] [TradingBot.DataCollector]: Fetched 259 historical bars for AAPL (15Min)
+[2026-08-07 19:48:25] [INFO] [TradingBot.DataCollector]: Fetched 248 historical bars for NVDA (15Min)
+[2026-08-07 19:48:26] [INFO] [TradingBot.DataCollector]: Fetched 251 historical bars for MSFT (15Min)
+[2026-08-07 19:48:27] [INFO] [TradingBot.DataCollector]: Fetched 232 historical bars for AMD (15Min)
+[2026-08-07 19:48:28] [INFO] [TradingBot.DataCollector]: Fetched 254 historical bars for DRAM (15Min)
+[2026-08-07 19:48:29] [INFO] [TradingBot.DataCollector]: Fetched 228 historical bars for TSM (15Min)
+[2026-08-07 19:48:29] [INFO] [TradingBot]: Warm-up historical candles loaded successfully.
+[2026-08-07 19:48:29] [INFO] [TradingBot]: Starting live market data stream subscriber...
+[2026-08-07 19:48:29] [INFO] [TradingBot.DataCollector]: Subscribing to real-time stream for symbols: ['AAPL', 'NVDA', 'MSFT', 'AMD', 'DRAM', 'TSM']
+[2026-08-07 19:48:29] [INFO] [TradingBot.DataCollector]: Alpaca WebSocket stream connected.
+[2026-08-07 19:48:29] [INFO] [TradingBot.HealthMonitor]: Health monitor service started (Interval: 60 minutes)
+[2026-08-07 20:32:00] [INFO] [TradingBot]: BUY Signal Triggered for AAPL using [VWAP_Breakout]! VWAP Breakout detected (Close: $313.68 > VWAP: $312.86, Vol: 49831 > Avg: 34327, RSI: 63.5)
+[2026-08-07 20:32:01] [INFO] [TradingBot.RiskManager]: Position Sizing: Risk=$2000.00 | Risk/Share=$4.71 -> Sized Shares: 47 ($14,742.96)
+[2026-08-07 20:32:01] [INFO] [TradingBot.OrderController]: Submitting BUY Bracket Order: AAPL x 47 | SL: $308.97 | TP: $323.09
+[2026-08-07 20:32:02] [INFO] [TradingBot.OrderController]: Bracket Order successfully placed! ID: dbbe0854-1960-41a2-af3d-da958706e13c
+[2026-08-07 20:32:02] [INFO] [TradingBot.RiskManager]: Recorded day trade at 2026-08-07 09:32:02 EST. Rolling count: 1
+[2026-08-07 20:33:00] [INFO] [TradingBot]: BUY Signal Triggered for AAPL using [VWAP_Breakout]! VWAP Breakout detected (Close: $313.35 > VWAP: $312.75, Vol: 54105 > Avg: 34541, RSI: 61.7)
+[2026-08-07 20:33:01] [INFO] [TradingBot.RiskManager]: Position Sizing: Risk=$2000.00 | Risk/Share=$4.70 -> Sized Shares: 47 ($14,727.22)
+[2026-08-07 20:33:01] [INFO] [TradingBot.OrderController]: Submitting BUY Bracket Order: AAPL x 47 | SL: $308.64 | TP: $322.75
+[2026-08-07 20:33:02] [INFO] [TradingBot.OrderController]: Bracket Order successfully placed! ID: 49e55177-832d-4104-af1d-235737933e84
+[2026-08-07 20:33:02] [INFO] [TradingBot.RiskManager]: Recorded day trade at 2026-08-07 09:33:02 EST. Rolling count: 2
+[2026-08-07 20:34:00] [INFO] [TradingBot]: BUY Signal Triggered for AAPL using [VWAP_Breakout]! VWAP Breakout detected (Close: $313.22 > VWAP: $312.71, Vol: 55980 > Avg: 34635, RSI: 61.0)
+[2026-08-07 20:34:01] [INFO] [TradingBot.RiskManager]: Position Sizing: Risk=$2000.00 | Risk/Share=$4.70 -> Sized Shares: 47 ($14,721.34)
+[2026-08-07 20:34:01] [INFO] [TradingBot.OrderController]: Submitting BUY Bracket Order: AAPL x 47 | SL: $308.52 | TP: $322.62
+[2026-08-07 20:34:02] [INFO] [TradingBot.OrderController]: Bracket Order successfully placed! ID: a14cba47-5a74-4645-88d7-86decc41eced
+[2026-08-07 20:34:02] [INFO] [TradingBot.RiskManager]: Recorded day trade at 2026-08-07 09:34:02 EST. Rolling count: 3
+[2026-08-07 20:35:00] [INFO] [TradingBot]: BUY Signal Triggered for AAPL using [VWAP_Breakout]! VWAP Breakout detected (Close: $313.14 > VWAP: $312.68, Vol: 60394 > Avg: 34856, RSI: 60.6)
+[2026-08-07 20:35:01] [INFO] [TradingBot.RiskManager]: Position Sizing: Risk=$1999.82 | Risk/Share=$4.70 -> Sized Shares: 47 ($14,717.58)
+[2026-08-07 20:35:01] [INFO] [TradingBot.OrderController]: Submitting BUY Bracket Order: AAPL x 47 | SL: $308.44 | TP: $322.53
+[2026-08-07 20:35:02] [INFO] [TradingBot.OrderController]: Bracket Order successfully placed! ID: 77642445-946f-4022-9bbf-4c7f5f44075f
+[2026-08-07 20:35:02] [INFO] [TradingBot.RiskManager]: Recorded day trade at 2026-08-07 09:35:02 EST. Rolling count: 4
+[2026-08-07 20:36:00] [INFO] [TradingBot]: BUY Signal Triggered for AAPL using [VWAP_Breakout]! VWAP Breakout detected (Close: $313.34 > VWAP: $312.75, Vol: 66696 > Avg: 35171, RSI: 61.7)
+[2026-08-07 20:36:01] [INFO] [TradingBot.RiskManager]: Position Sizing: Risk=$1999.81 | Risk/Share=$4.70 -> Sized Shares: 47 ($14,726.98)
+[2026-08-07 20:36:01] [INFO] [TradingBot.OrderController]: Submitting BUY Bracket Order: AAPL x 47 | SL: $308.64 | TP: $322.74
+[2026-08-07 20:36:02] [INFO] [TradingBot.OrderController]: Bracket Order successfully placed! ID: cea70afc-faa6-4a7c-bb70-52cd47928d32
+[2026-08-07 20:36:02] [INFO] [TradingBot.RiskManager]: Recorded day trade at 2026-08-07 09:36:02 EST. Rolling count: 5
+[2026-08-07 20:37:00] [INFO] [TradingBot]: BUY Signal Triggered for AAPL using [VWAP_Breakout]! VWAP Breakout detected (Close: $313.03 > VWAP: $312.65, Vol: 71537 > Avg: 35413, RSI: 59.9)
+[2026-08-07 20:37:01] [INFO] [TradingBot.RiskManager]: Position Sizing: Risk=$1998.70 | Risk/Share=$4.70 -> Sized Shares: 47 ($14,712.41)
+[2026-08-07 20:37:01] [INFO] [TradingBot.OrderController]: Submitting BUY Bracket Order: AAPL x 47 | SL: $308.33 | TP: $322.42
+[2026-08-07 20:37:02] [INFO] [TradingBot.OrderController]: Bracket Order successfully placed! ID: 5a6e570f-fe6c-49a5-893b-e3dfb916ea3e
+[2026-08-07 20:37:02] [INFO] [TradingBot.RiskManager]: Recorded day trade at 2026-08-07 09:37:02 EST. Rolling count: 6
+[2026-08-07 20:38:00] [INFO] [TradingBot]: BUY Signal Triggered for AAPL using [VWAP_Breakout]! VWAP Breakout detected (Close: $312.71 > VWAP: $312.54, Vol: 73950 > Avg: 35533, RSI: 57.8)
+[2026-08-07 20:38:01] [INFO] [TradingBot.RiskManager]: Position Sizing: Risk=$1997.11 | Risk/Share=$4.69 -> Sized Shares: 47 ($14,697.37)
+[2026-08-07 20:38:01] [INFO] [TradingBot.OrderController]: Submitting BUY Bracket Order: AAPL x 47 | SL: $308.02 | TP: $322.09
+[2026-08-07 20:38:01] [INFO] [TradingBot.OrderController]: Bracket Order successfully placed! ID: 5bb30c58-ff25-4dbd-a9d9-73085b9ed578
+[2026-08-07 20:38:01] [INFO] [TradingBot.RiskManager]: Recorded day trade at 2026-08-07 09:38:01 EST. Rolling count: 7
+[2026-08-07 20:39:00] [INFO] [TradingBot]: BUY Signal Triggered for AAPL using [VWAP_Breakout]! VWAP Breakout detected (Close: $312.56 > VWAP: $312.49, Vol: 76946 > Avg: 35683, RSI: 56.8)
+[2026-08-07 20:39:01] [INFO] [TradingBot.RiskManager]: Position Sizing: Risk=$1995.46 | Risk/Share=$4.69 -> Sized Shares: 47 ($14,690.09)
+[2026-08-07 20:39:01] [INFO] [TradingBot.OrderController]: Submitting BUY Bracket Order: AAPL x 47 | SL: $307.87 | TP: $321.93
+[2026-08-07 20:39:02] [INFO] [TradingBot.OrderController]: Bracket Order successfully placed! ID: 9d7c3e3b-ef1d-4b15-8f25-1f1f7657ca41
+[2026-08-07 20:39:02] [INFO] [TradingBot.RiskManager]: Recorded day trade at 2026-08-07 09:39:02 EST. Rolling count: 8
+[2026-08-07 20:40:09] [INFO] [TradingBot]: Initializing Algorithmic Day Trading Engine (Multi-Strategy Asset Router)...
+[2026-08-07 20:40:09] [INFO] [TradingBot]: Mode: PAPER | Base URL: https://paper-api.alpaca.markets
+[2026-08-07 20:40:09] [INFO] [TradingBot]: Symbol Routing: AAPL -> Strategy [VWAP_Breakout]
+[2026-08-07 20:40:09] [INFO] [TradingBot]: Symbol Routing: NVDA -> Strategy [RSI_MeanReversion]
+[2026-08-07 20:40:09] [INFO] [TradingBot]: Symbol Routing: MSFT -> Strategy [MA_Crossover]
+[2026-08-07 20:40:09] [INFO] [TradingBot]: Symbol Routing: AMD -> Strategy [MA_Crossover]
+[2026-08-07 20:40:09] [INFO] [TradingBot]: Symbol Routing: DRAM -> Strategy [RSI_MeanReversion]
+[2026-08-07 20:40:09] [INFO] [TradingBot]: Symbol Routing: TSM -> Strategy [RSI_MeanReversion]
+[2026-08-07 20:40:10] [INFO] [TradingBot]: Connected to Alpaca Account. Equity: $99,646.13
+[2026-08-07 20:40:11] [INFO] [TradingBot.DataCollector]: Fetched 259 historical bars for AAPL (15Min)
+[2026-08-07 20:40:12] [INFO] [TradingBot.DataCollector]: Fetched 248 historical bars for NVDA (15Min)
+[2026-08-07 20:40:14] [INFO] [TradingBot.DataCollector]: Fetched 251 historical bars for MSFT (15Min)
+[2026-08-07 20:40:15] [INFO] [TradingBot.DataCollector]: Fetched 232 historical bars for AMD (15Min)
+[2026-08-07 20:40:16] [INFO] [TradingBot.DataCollector]: Fetched 254 historical bars for DRAM (15Min)
+[2026-08-07 20:40:17] [INFO] [TradingBot.DataCollector]: Fetched 228 historical bars for TSM (15Min)
+[2026-08-07 20:40:17] [INFO] [TradingBot]: Warm-up historical candles loaded successfully.
+[2026-08-07 20:40:17] [INFO] [TradingBot]: Starting live market data stream subscriber...
+[2026-08-07 20:40:17] [INFO] [TradingBot.DataCollector]: Subscribing to real-time stream for symbols: ['AAPL', 'NVDA', 'MSFT', 'AMD', 'DRAM', 'TSM']
+[2026-08-07 20:40:17] [INFO] [TradingBot.DataCollector]: Alpaca WebSocket stream connected.
+[2026-08-07 20:40:17] [INFO] [TradingBot.HealthMonitor]: Health monitor service started (Interval: 60 minutes)

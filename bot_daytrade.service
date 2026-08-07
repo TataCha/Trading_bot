@@ -1,0 +1,15 @@
+[Unit]
+Description=Algorithmic Day Trading Bot Service (US Tech Stocks)
+After=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu/Bot_daytrade
+ExecStart=/home/ubuntu/Bot_daytrade/venv/bin/python3 main.py
+Restart=always
+RestartSec=10
+EnvironmentFile=/home/ubuntu/Bot_daytrade/config/.env
+
+[Install]
+WantedBy=multi-user.target
