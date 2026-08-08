@@ -70,9 +70,14 @@ class RiskManager:
         """
         Validates whether a new position can be legally and safely opened under risk guardrails.
         """
-        # 0. Duplicate position check
+        # 0. Duplicate position check (cannot hold 2 positions in the SAME symbol)
         if active_positions and symbol in active_positions:
             return False, f"Position already open for {symbol}."
+
+        # 0.1 Concurrent portfolio capacity check (allow up to MAX_CONCURRENT_POSITIONS)
+        max_pos = getattr(self.settings, 'MAX_CONCURRENT_POSITIONS', 3)
+        if active_positions and len(active_positions) >= max_pos:
+            return False, f"Portfolio capacity reached! Already holding {len(active_positions)}/{max_pos} active positions."
 
         # 1. Circuit Breaker check
         if self.circuit_breaker_tripped:

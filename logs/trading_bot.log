@@ -118,3 +118,98 @@
 [2026-08-07 20:40:17] [INFO] [TradingBot.DataCollector]: Subscribing to real-time stream for symbols: ['AAPL', 'NVDA', 'MSFT', 'AMD', 'DRAM', 'TSM']
 [2026-08-07 20:40:17] [INFO] [TradingBot.DataCollector]: Alpaca WebSocket stream connected.
 [2026-08-07 20:40:17] [INFO] [TradingBot.HealthMonitor]: Health monitor service started (Interval: 60 minutes)
+[2026-08-07 21:16:00] [INFO] [TradingBot]: BUY Signal Triggered for DRAM using [RSI_MeanReversion]! RSI Mean Reversion (RSI bounced from 19.4 to 21.8 @ $49.05)
+[2026-08-07 21:16:02] [INFO] [TradingBot.RiskManager]: Position Sizing: Risk=$1991.49 | Risk/Share=$0.59 -> Sized Shares: 304 ($14,911.20)
+[2026-08-07 21:16:02] [INFO] [TradingBot.OrderController]: Submitting BUY Bracket Order: DRAM x 304 | SL: $48.46 | TP: $50.23
+[2026-08-07 21:16:03] [INFO] [TradingBot.OrderController]: Bracket Order successfully placed! ID: 9d759b7a-dc03-47d6-a235-8727b842cd72
+[2026-08-07 21:16:03] [INFO] [TradingBot.RiskManager]: Recorded day trade at 2026-08-07 10:16:03 EST. Rolling count: 1
+[2026-08-07 21:17:00] [INFO] [TradingBot]: BUY Signal Triggered for DRAM using [RSI_MeanReversion]! RSI Mean Reversion (RSI bounced from 19.4 to 24.1 @ $49.19)
+[2026-08-07 21:17:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for DRAM: Position already open for DRAM.
+[2026-08-07 21:18:00] [INFO] [TradingBot]: BUY Signal Triggered for DRAM using [RSI_MeanReversion]! RSI Mean Reversion (RSI bounced from 19.4 to 22.1 @ $49.07)
+[2026-08-07 21:18:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for DRAM: Position already open for DRAM.
+[2026-08-07 21:19:00] [INFO] [TradingBot]: BUY Signal Triggered for DRAM using [RSI_MeanReversion]! RSI Mean Reversion (RSI bounced from 19.4 to 26.7 @ $49.36)
+[2026-08-07 21:19:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for DRAM: Position already open for DRAM.
+[2026-08-07 21:20:00] [INFO] [TradingBot]: BUY Signal Triggered for DRAM using [RSI_MeanReversion]! RSI Mean Reversion (RSI bounced from 19.4 to 29.3 @ $49.54)
+[2026-08-07 21:20:00] [WARNING] [TradingBot]: Trade blocked by Risk Manager for DRAM: Position already open for DRAM.
+[2026-08-07 21:21:00] [INFO] [TradingBot]: BUY Signal Triggered for DRAM using [RSI_MeanReversion]! RSI Mean Reversion (RSI bounced from 19.4 to 29.7 @ $49.57)
+[2026-08-07 21:21:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for DRAM: Position already open for DRAM.
+[2026-08-07 21:22:00] [INFO] [TradingBot]: BUY Signal Triggered for DRAM using [RSI_MeanReversion]! RSI Mean Reversion (RSI bounced from 19.4 to 28.2 @ $49.46)
+[2026-08-07 21:22:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for DRAM: Position already open for DRAM.
+[2026-08-07 21:23:00] [INFO] [TradingBot]: BUY Signal Triggered for DRAM using [RSI_MeanReversion]! RSI Mean Reversion (RSI bounced from 19.4 to 24.3 @ $49.20)
+[2026-08-07 21:23:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for DRAM: Position already open for DRAM.
+[2026-08-07 21:24:00] [INFO] [TradingBot]: BUY Signal Triggered for DRAM using [RSI_MeanReversion]! RSI Mean Reversion (RSI bounced from 19.4 to 27.7 @ $49.43)
+[2026-08-07 21:24:00] [WARNING] [TradingBot]: Trade blocked by Risk Manager for DRAM: Position already open for DRAM.
+[2026-08-07 21:25:00] [INFO] [TradingBot]: BUY Signal Triggered for DRAM using [RSI_MeanReversion]! RSI Mean Reversion (RSI bounced from 19.4 to 23.5 @ $49.15)
+[2026-08-07 21:25:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for DRAM: Position already open for DRAM.
+[2026-08-07 21:26:00] [INFO] [TradingBot]: BUY Signal Triggered for DRAM using [RSI_MeanReversion]! RSI Mean Reversion (RSI bounced from 19.4 to 29.4 @ $49.55)
+[2026-08-07 21:26:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for DRAM: Position already open for DRAM.
+[2026-08-07 21:27:00] [INFO] [TradingBot]: BUY Signal Triggered for DRAM using [RSI_MeanReversion]! RSI Mean Reversion (RSI bounced from 19.4 to 30.3 @ $49.62)
+[2026-08-07 21:27:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for DRAM: Position already open for DRAM.
+[2026-08-07 21:28:00] [INFO] [TradingBot]: BUY Signal Triggered for DRAM using [RSI_MeanReversion]! RSI Mean Reversion (RSI bounced from 19.4 to 31.3 @ $49.69)
+[2026-08-07 21:28:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for DRAM: Position already open for DRAM.
+[2026-08-07 21:29:00] [INFO] [TradingBot]: BUY Signal Triggered for DRAM using [RSI_MeanReversion]! RSI Mean Reversion (RSI bounced from 19.4 to 29.4 @ $49.55)
+[2026-08-07 21:29:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for DRAM: Position already open for DRAM.
+[2026-08-07 21:30:00] [INFO] [TradingBot]: BUY Signal Triggered for DRAM using [RSI_MeanReversion]! RSI Mean Reversion (RSI bounced from 19.4 to 28.3 @ $49.47)
+[2026-08-07 21:30:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for DRAM: Position already open for DRAM.
+[2026-08-07 21:46:00] [INFO] [TradingBot]: BUY Signal Triggered for DRAM using [RSI_MeanReversion]! RSI Mean Reversion (RSI bounced from 25.9 to 27.1 @ $49.11)
+[2026-08-07 21:46:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for DRAM: Position already open for DRAM.
+[2026-08-07 21:47:00] [INFO] [TradingBot]: BUY Signal Triggered for DRAM using [RSI_MeanReversion]! RSI Mean Reversion (RSI bounced from 25.9 to 28.5 @ $49.21)
+[2026-08-07 21:47:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for DRAM: Position already open for DRAM.
+[2026-08-07 21:48:00] [INFO] [TradingBot]: BUY Signal Triggered for DRAM using [RSI_MeanReversion]! RSI Mean Reversion (RSI bounced from 25.9 to 30.1 @ $49.32)
+[2026-08-07 21:48:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for DRAM: Position already open for DRAM.
+[2026-08-07 21:49:00] [INFO] [TradingBot]: BUY Signal Triggered for DRAM using [RSI_MeanReversion]! RSI Mean Reversion (RSI bounced from 25.9 to 29.9 @ $49.30)
+[2026-08-07 21:49:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for DRAM: Position already open for DRAM.
+[2026-08-07 21:50:00] [INFO] [TradingBot]: BUY Signal Triggered for DRAM using [RSI_MeanReversion]! RSI Mean Reversion (RSI bounced from 25.9 to 30.8 @ $49.37)
+[2026-08-07 21:50:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for DRAM: Position already open for DRAM.
+[2026-08-07 21:51:00] [INFO] [TradingBot]: BUY Signal Triggered for DRAM using [RSI_MeanReversion]! RSI Mean Reversion (RSI bounced from 25.9 to 31.9 @ $49.45)
+[2026-08-07 21:51:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for DRAM: Position already open for DRAM.
+[2026-08-07 21:52:00] [INFO] [TradingBot]: BUY Signal Triggered for DRAM using [RSI_MeanReversion]! RSI Mean Reversion (RSI bounced from 25.9 to 30.6 @ $49.36)
+[2026-08-07 21:52:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for DRAM: Position already open for DRAM.
+[2026-08-07 21:53:00] [INFO] [TradingBot]: BUY Signal Triggered for DRAM using [RSI_MeanReversion]! RSI Mean Reversion (RSI bounced from 25.9 to 29.3 @ $49.26)
+[2026-08-07 21:53:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for DRAM: Position already open for DRAM.
+[2026-08-07 21:54:00] [INFO] [TradingBot]: BUY Signal Triggered for DRAM using [RSI_MeanReversion]! RSI Mean Reversion (RSI bounced from 25.9 to 28.2 @ $49.19)
+[2026-08-07 21:54:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for DRAM: Position already open for DRAM.
+[2026-08-07 21:55:00] [INFO] [TradingBot]: BUY Signal Triggered for DRAM using [RSI_MeanReversion]! RSI Mean Reversion (RSI bounced from 25.9 to 28.0 @ $49.17)
+[2026-08-07 21:55:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for DRAM: Position already open for DRAM.
+[2026-08-07 21:56:00] [INFO] [TradingBot]: BUY Signal Triggered for DRAM using [RSI_MeanReversion]! RSI Mean Reversion (RSI bounced from 25.9 to 29.7 @ $49.29)
+[2026-08-07 21:56:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for DRAM: Position already open for DRAM.
+[2026-08-07 21:57:00] [INFO] [TradingBot]: BUY Signal Triggered for DRAM using [RSI_MeanReversion]! RSI Mean Reversion (RSI bounced from 25.9 to 28.5 @ $49.21)
+[2026-08-07 21:57:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for DRAM: Position already open for DRAM.
+[2026-08-07 21:58:00] [INFO] [TradingBot]: BUY Signal Triggered for DRAM using [RSI_MeanReversion]! RSI Mean Reversion (RSI bounced from 25.9 to 30.4 @ $49.34)
+[2026-08-07 21:58:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for DRAM: Position already open for DRAM.
+[2026-08-07 21:59:00] [INFO] [TradingBot]: BUY Signal Triggered for DRAM using [RSI_MeanReversion]! RSI Mean Reversion (RSI bounced from 25.9 to 31.3 @ $49.41)
+[2026-08-07 21:59:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for DRAM: Position already open for DRAM.
+[2026-08-07 22:00:00] [INFO] [TradingBot]: BUY Signal Triggered for DRAM using [RSI_MeanReversion]! RSI Mean Reversion (RSI bounced from 25.9 to 30.7 @ $49.37)
+[2026-08-07 22:00:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for DRAM: Position already open for DRAM.
+[2026-08-07 22:01:00] [INFO] [TradingBot]: BUY Signal Triggered for DRAM using [RSI_MeanReversion]! RSI Mean Reversion (RSI bounced from 30.7 to 31.2 @ $49.40)
+[2026-08-07 22:01:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for DRAM: Position already open for DRAM.
+[2026-08-07 22:02:00] [INFO] [TradingBot]: BUY Signal Triggered for DRAM using [RSI_MeanReversion]! RSI Mean Reversion (RSI bounced from 30.7 to 31.7 @ $49.43)
+[2026-08-07 22:02:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for DRAM: Position already open for DRAM.
+[2026-08-07 22:03:00] [INFO] [TradingBot]: BUY Signal Triggered for DRAM using [RSI_MeanReversion]! RSI Mean Reversion (RSI bounced from 30.7 to 32.2 @ $49.47)
+[2026-08-07 22:03:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for DRAM: Position already open for DRAM.
+[2026-08-07 22:04:00] [INFO] [TradingBot]: BUY Signal Triggered for DRAM using [RSI_MeanReversion]! RSI Mean Reversion (RSI bounced from 30.7 to 33.3 @ $49.55)
+[2026-08-07 22:04:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for DRAM: Position already open for DRAM.
+[2026-08-07 22:05:00] [INFO] [TradingBot]: BUY Signal Triggered for DRAM using [RSI_MeanReversion]! RSI Mean Reversion (RSI bounced from 30.7 to 33.7 @ $49.58)
+[2026-08-07 22:05:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for DRAM: Position already open for DRAM.
+[2026-08-07 22:06:00] [INFO] [TradingBot]: BUY Signal Triggered for DRAM using [RSI_MeanReversion]! RSI Mean Reversion (RSI bounced from 30.7 to 34.8 @ $49.66)
+[2026-08-07 22:06:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for DRAM: Position already open for DRAM.
+[2026-08-07 22:07:00] [INFO] [TradingBot]: BUY Signal Triggered for DRAM using [RSI_MeanReversion]! RSI Mean Reversion (RSI bounced from 30.7 to 36.5 @ $49.80)
+[2026-08-07 22:07:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for DRAM: Position already open for DRAM.
+[2026-08-07 22:08:00] [INFO] [TradingBot]: BUY Signal Triggered for DRAM using [RSI_MeanReversion]! RSI Mean Reversion (RSI bounced from 30.7 to 36.6 @ $49.80)
+[2026-08-07 22:08:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for DRAM: Position already open for DRAM.
+[2026-08-07 22:09:00] [INFO] [TradingBot]: BUY Signal Triggered for DRAM using [RSI_MeanReversion]! RSI Mean Reversion (RSI bounced from 30.7 to 37.3 @ $49.86)
+[2026-08-07 22:09:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for DRAM: Position already open for DRAM.
+[2026-08-07 22:10:00] [INFO] [TradingBot]: BUY Signal Triggered for DRAM using [RSI_MeanReversion]! RSI Mean Reversion (RSI bounced from 30.7 to 36.8 @ $49.82)
+[2026-08-07 22:10:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for DRAM: Position already open for DRAM.
+[2026-08-07 22:11:00] [INFO] [TradingBot]: BUY Signal Triggered for DRAM using [RSI_MeanReversion]! RSI Mean Reversion (RSI bounced from 30.7 to 37.3 @ $49.87)
+[2026-08-07 22:11:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for DRAM: Position already open for DRAM.
+[2026-08-07 22:12:00] [INFO] [TradingBot]: BUY Signal Triggered for DRAM using [RSI_MeanReversion]! RSI Mean Reversion (RSI bounced from 30.7 to 36.6 @ $49.80)
+[2026-08-07 22:12:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for DRAM: Position already open for DRAM.
+[2026-08-07 22:13:00] [INFO] [TradingBot]: BUY Signal Triggered for DRAM using [RSI_MeanReversion]! RSI Mean Reversion (RSI bounced from 30.7 to 36.8 @ $49.82)
+[2026-08-07 22:13:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for DRAM: Position already open for DRAM.
+[2026-08-07 22:14:00] [INFO] [TradingBot]: BUY Signal Triggered for DRAM using [RSI_MeanReversion]! RSI Mean Reversion (RSI bounced from 30.7 to 36.9 @ $49.83)
+[2026-08-07 22:14:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for DRAM: Position already open for DRAM.
+[2026-08-07 22:15:00] [INFO] [TradingBot]: BUY Signal Triggered for DRAM using [RSI_MeanReversion]! RSI Mean Reversion (RSI bounced from 30.7 to 36.9 @ $49.83)
+[2026-08-07 22:15:04] [WARNING] [TradingBot]: Trade blocked by Risk Manager for DRAM: Position already open for DRAM.
+[2026-08-08 02:45:00] [WARNING] [TradingBot.EODFlusher]: EOD Flush trigger activated at 15:45:00 EST! Target time: 15:45
+[2026-08-08 02:45:01] [WARNING] [TradingBot]: EOD Flush Triggered! Closing all open positions...

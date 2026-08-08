@@ -30,7 +30,9 @@ DEFAULT_SYMBOL_STRATEGY_MAP: Dict[str, StrategyBase] = {
     "MSFT": MovingAverageCrossoverStrategy(),
     "AMD": MovingAverageCrossoverStrategy(),
     "DRAM": RSIReversionStrategy(),
-    "TSM": RSIReversionStrategy()
+    "TSM": RSIReversionStrategy(),
+    "TQQQ": VWAPBreakoutStrategy(),
+    "SOXL": MovingAverageCrossoverStrategy()
 }
 
 class TradingBotEngine:

@@ -29,14 +29,15 @@ class Settings(BaseSettings):
     MAX_RISK_PER_TRADE_PCT: float = Field(default=0.02)  # 2% per trade
     DAILY_DRAWDOWN_LIMIT_PCT: float = Field(default=0.05)  # 5% daily circuit breaker
     MAX_ACCOUNT_EQUITY_RISK_PCT: float = Field(default=0.10)
+    MAX_CONCURRENT_POSITIONS: int = Field(default=3)  # Hold up to 3 different stocks simultaneously
     ENFORCE_PDT_RULE: bool = Field(default=True)
     PDT_ACCOUNT_THRESHOLD: float = Field(default=25000.00)
     EOD_FLUSH_TIME_EST: str = Field(default="15:45")
 
-    # Timeframe & Watchlist
+    # Timeframe & Watchlist (Tech Equities + 3x Leveraged Tech ETFs)
     TIMEFRAME: str = Field(default="15m")
     SYMBOLS: List[str] = Field(
-        default_factory=lambda: ["AAPL", "NVDA", "MSFT", "AMD", "DRAM", "TSM"]
+        default_factory=lambda: ["AAPL", "NVDA", "MSFT", "AMD", "DRAM", "TSM", "TQQQ", "SOXL"]
     )
 
     # Notifications

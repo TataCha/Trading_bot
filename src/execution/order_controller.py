@@ -94,7 +94,7 @@ class OrderController:
             logger.error(f"Exception submitting order for {symbol}: {e}")
             return {"error": str(e)}
 
-    def close_all_positions() -> List[Dict[str, Any]]:
+    def close_all_positions(self) -> List[Dict[str, Any]]:
         """
         Liquidates all open positions and cancels open orders (used during EOD flush or emergency halt).
         """
