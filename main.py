@@ -12,7 +12,7 @@ from src.monitoring.health import HealthMonitor
 from src.data.collector import MarketDataCollector
 from src.data.resampler import CandleResampler
 from src.data.indicators import add_all_indicators
-from src.strategy.base import StrategyBase
+from src.strategy.swing_trend import SwingTrendPullbackStrategy, SwingBreakoutStrategy
 from src.strategy.vwap_breakout import VWAPBreakoutStrategy
 from src.strategy.rsi_reversion import RSIReversionStrategy
 from src.strategy.ma_crossover import MovingAverageCrossoverStrategy
@@ -23,22 +23,23 @@ from src.utils.time_utils import is_market_open, get_est_now
 
 logger = setup_logger("TradingBot", level="INFO")
 
-# Multi-Strategy Symbol Router: Assigns the optimal strategy per stock based on quantitative backtests
+# Multi-Strategy Symbol Router: Optimized for Multi-Day / Weekly Swing Trend Trading
 DEFAULT_SYMBOL_STRATEGY_MAP: Dict[str, StrategyBase] = {
-    "NVDA": RSIReversionStrategy(),
-    "AAPL": VWAPBreakoutStrategy(),
-    "MSFT": MovingAverageCrossoverStrategy(),
-    "AMD": MovingAverageCrossoverStrategy(),
-    "DRAM": RSIReversionStrategy(),
-    "TSM": RSIReversionStrategy(),
-    "TQQQ": VWAPBreakoutStrategy(),
-    "SOXL": MovingAverageCrossoverStrategy()
+    "SOXL": SwingBreakoutStrategy(),
+    "AMD": SwingBreakoutStrategy(),
+    "TSM": SwingBreakoutStrategy(),
+    "TQQQ": SwingBreakoutStrategy(),
+    "NVDA": SwingTrendPullbackStrategy(),
+    "AAPL": SwingTrendPullbackStrategy(),
+    "MSFT": SwingBreakoutStrategy(),
+    "DRAM": SwingTrendPullbackStrategy()
 }
 
 class TradingBotEngine:
     """
-    Main Algorithmic Day Trading Engine Orchestrator with Multi-Strategy Symbol Routing.
-    Maps each stock to its highest performing strategy, executing via Alpaca Bracket Orders.
+    Main Algorithmic Trading Engine Orchestrator.
+    Supports Multi-Day / Weekly Swing Trading (1-Hour/Daily) and Intraday Day Trading.
+    Maps each stock to its highest performing strategy with ATR Trailing Stops.
     """
 
     def __init__(self, symbol_strategy_map: Dict[str, StrategyBase] = None):
@@ -48,12 +49,15 @@ class TradingBotEngine:
         self.risk_manager = RiskManager(settings=self.settings)
         self.eod_flusher = EODFlusher(settings=self.settings)
         self.collector = MarketDataCollector(settings=self.settings)
-        self.resampler = CandleResampler(target_tf="15min")
+
+        # Resample timeframe (e.g., '1h' for swing, '15min' for daytrade)
+        tf = "1h" if "1h" in self.settings.TIMEFRAME.lower() else "15min"
+        self.resampler = CandleResampler(target_tf=tf)
 
         # Set symbol strategy map
         self.strategy_map = symbol_strategy_map or DEFAULT_SYMBOL_STRATEGY_MAP
-        # Fallback default strategy for any symbol not explicitly listed
-        self.default_strategy = VWAPBreakoutStrategy()
+        # Fallback default strategy
+        self.default_strategy = SwingBreakoutStrategy() if self.settings.TRADING_STYLE == "swing" else VWAPBreakoutStrategy()
 
         self.health_monitor = HealthMonitor(
             settings=self.settings,
@@ -86,19 +90,22 @@ class TradingBotEngine:
             logger.warning("Could not fetch valid Alpaca equity. Assuming paper mode default ($100,000.00).")
             self.risk_manager.update_account_equity(100000.0)
 
-        # Pre-fetch warm-up historical 15m candles
+        # Pre-fetch warm-up historical candles based on configured timeframe
+        warmup_tf = "1Hour" if "1h" in self.settings.TIMEFRAME.lower() else "15Min"
+        days_back = 45 if "1h" in self.settings.TIMEFRAME.lower() else 10
+
         for symbol in self.settings.SYMBOLS:
-            df_hist = self.collector.fetch_historical_bars(symbol, timeframe="15Min", days_back=10)
+            df_hist = self.collector.fetch_historical_bars(symbol, timeframe=warmup_tf, days_back=days_back)
             if not df_hist.empty:
                 self.resampler.load_historical(symbol, df_hist)
 
-        logger.info("Warm-up historical candles loaded successfully.")
+        logger.info(f"Warm-up historical candles ({warmup_tf}) loaded successfully.")
 
     def on_bar_received(self, symbol: str, timestamp: pd.Timestamp, open_: float, high: float, low: float, close: float, volume: float):
         """
         Real-time callback invoked whenever a new 1-minute streaming bar is received.
         """
-        # 1. EOD Flush Check (3:45 PM EST)
+        # 1. EOD Flush Check (Only if enabled, e.g. Day Trading mode)
         if self.eod_flusher.should_flush():
             open_positions = self.order_controller.get_positions()
             if open_positions:
@@ -111,17 +118,17 @@ class TradingBotEngine:
         if not is_market_open():
             return
 
-        # 3. Append to 15m Resampler
-        df_15m = self.resampler.append_bar(symbol, timestamp, open_, high, low, close, volume)
-        if df_15m.empty or len(df_15m) < 20:
+        # 3. Append to Candle Resampler (1H for Swing, 15m for Day Trading)
+        df_candles = self.resampler.append_bar(symbol, timestamp, open_, high, low, close, volume)
+        if df_candles.empty or len(df_candles) < 20:
             return
 
-        # 4. Add technical indicators (VWAP, RSI, MACD, Moving Averages)
-        df_15m = add_all_indicators(df_15m)
+        # 4. Add technical indicators (ATR, Donchian, EMA, VWAP, RSI, MACD)
+        df_candles = add_all_indicators(df_candles)
 
         # 5. Evaluate Symbol-Specific Strategy Signal
         strategy = self.get_strategy_for_symbol(symbol)
-        signal = strategy.evaluate(symbol, df_15m)
+        signal = strategy.evaluate(symbol, df_candles)
         logger.debug(f"Evaluated {symbol} with [{strategy.name}]: {signal}")
 
         if signal.signal_type.value == "BUY":

@@ -98,7 +98,7 @@ class OrderController:
         """
         Liquidates all open positions and cancels open orders (used during EOD flush or emergency halt).
         """
-        url = f"{self.base_url}/v2/positions"
+        url = f"{self.base_url}/v2/positions?cancel_orders=true"
         try:
             logger.warning("Initiating liquidation of ALL open positions...")
             res = requests.delete(url, headers=self.headers, timeout=15)

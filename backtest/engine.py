@@ -22,18 +22,22 @@ class BacktestEngine:
         strategy_params: Dict[str, Any] = None,
         initial_capital: float = 100000.0,
         slippage_pct: float = 0.0005,  # 0.05% slippage buffer
-        commission_per_share: float = 0.0
+        commission_per_share: float = 0.0,
+        allow_overnight: bool = True,
+        enable_trailing_stop: bool = True
     ):
         self.strategy = strategy_class(params=strategy_params)
         self.initial_capital = initial_capital
         self.capital = initial_capital
         self.slippage_pct = slippage_pct
         self.commission_per_share = commission_per_share
+        self.allow_overnight = allow_overnight
+        self.enable_trailing_stop = enable_trailing_stop
         self.risk_manager = RiskManager()
 
     def run(self, symbol: str, df_historical: pd.DataFrame) -> Dict[str, Any]:
         """
-        Executes backtest over historical 15-minute bar DataFrame.
+        Executes backtest over historical bar DataFrame (supports 15m, 1h, 1d).
         """
         logger.info(f"Starting Backtest for {symbol} with strategy {self.strategy.name} ({len(df_historical)} bars)...")
 
@@ -55,27 +59,37 @@ class BacktestEngine:
             close_price = float(current_bar['close'])
             high_price = float(current_bar['high'])
             low_price = float(current_bar['low'])
+            atr = float(current_bar.get('atr', close_price * 0.025))
 
-            # 2. Check open position for Stop Loss / Take Profit / EOD exit
+            # 2. Check open position for Stop Loss / Take Profit / Trailing Stop / EOD exit
             if position is not None:
                 qty = position['qty']
                 entry_price = position['entry_price']
                 sl_price = position['sl_price']
                 tp_price = position['tp_price']
 
+                # Update Trailing Stop if enabled
+                if self.enable_trailing_stop:
+                    highest = max(position.get('highest_price', entry_price), high_price)
+                    position['highest_price'] = highest
+                    trail_dist = position.get('trail_dist', (entry_price - position['initial_sl']))
+                    trailed_sl = highest - trail_dist
+                    position['sl_price'] = max(position['sl_price'], trailed_sl)
+                    sl_price = position['sl_price']
+
                 exit_price = None
                 exit_reason = ""
 
-                # Check Stop Loss hit
+                # Check Stop Loss / Trailing Stop hit
                 if low_price <= sl_price:
                     exit_price = sl_price * (1.0 - self.slippage_pct)
-                    exit_reason = "Stop Loss Hit"
+                    exit_reason = "Trailing Stop Hit" if self.enable_trailing_stop and sl_price > position['initial_sl'] else "Stop Loss Hit"
                 # Check Take Profit hit
                 elif high_price >= tp_price:
                     exit_price = tp_price * (1.0 - self.slippage_pct)
                     exit_reason = "Take Profit Hit"
-                # Check EOD flush (3:45 PM EST)
-                elif hasattr(current_time, "hour") and (current_time.hour == 15 and current_time.minute >= 45):
+                # Check EOD flush (only if allow_overnight is False)
+                elif not self.allow_overnight and hasattr(current_time, "hour") and (current_time.hour == 15 and current_time.minute >= 45):
                     exit_price = close_price * (1.0 - self.slippage_pct)
                     exit_reason = "EOD Flush"
 
@@ -120,6 +134,9 @@ class BacktestEngine:
                             "entry_time": current_time,
                             "entry_price": buy_price,
                             "sl_price": sl,
+                            "initial_sl": sl,
+                            "highest_price": buy_price,
+                            "trail_dist": max(buy_price - sl, atr * 2.0),
                             "tp_price": tp,
                             "qty": qty
                         }

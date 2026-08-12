@@ -22,6 +22,9 @@ class EODFlusher:
         """
         Determines whether EOD liquidation should be triggered at current time.
         """
+        if not getattr(self.settings, "ENABLE_EOD_FLUSH", False):
+            return False
+
         now = get_est_now()
         today = now.date()
 

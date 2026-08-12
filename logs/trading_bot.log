@@ -213,3 +213,225 @@
 [2026-08-07 22:15:04] [WARNING] [TradingBot]: Trade blocked by Risk Manager for DRAM: Position already open for DRAM.
 [2026-08-08 02:45:00] [WARNING] [TradingBot.EODFlusher]: EOD Flush trigger activated at 15:45:00 EST! Target time: 15:45
 [2026-08-08 02:45:01] [WARNING] [TradingBot]: EOD Flush Triggered! Closing all open positions...
+[2026-08-08 18:56:20] [INFO] [TradingBot]: Initializing Algorithmic Day Trading Engine (Multi-Strategy Asset Router)...
+[2026-08-08 18:56:20] [INFO] [TradingBot]: Mode: PAPER | Base URL: https://paper-api.alpaca.markets
+[2026-08-08 18:56:20] [INFO] [TradingBot]: Symbol Routing: AAPL -> Strategy [VWAP_Breakout]
+[2026-08-08 18:56:20] [INFO] [TradingBot]: Symbol Routing: NVDA -> Strategy [RSI_MeanReversion]
+[2026-08-08 18:56:20] [INFO] [TradingBot]: Symbol Routing: MSFT -> Strategy [MA_Crossover]
+[2026-08-08 18:56:20] [INFO] [TradingBot]: Symbol Routing: AMD -> Strategy [MA_Crossover]
+[2026-08-08 18:56:20] [INFO] [TradingBot]: Symbol Routing: DRAM -> Strategy [RSI_MeanReversion]
+[2026-08-08 18:56:20] [INFO] [TradingBot]: Symbol Routing: TSM -> Strategy [RSI_MeanReversion]
+[2026-08-08 18:56:20] [INFO] [TradingBot]: Connected to Alpaca Account. Equity: $100,428.25
+[2026-08-08 18:56:22] [INFO] [TradingBot.DataCollector]: Fetched 251 historical bars for AAPL (15Min)
+[2026-08-08 18:56:22] [INFO] [TradingBot.DataCollector]: Fetched 243 historical bars for NVDA (15Min)
+[2026-08-08 18:56:23] [INFO] [TradingBot.DataCollector]: Fetched 245 historical bars for MSFT (15Min)
+[2026-08-08 18:56:24] [INFO] [TradingBot.DataCollector]: Fetched 232 historical bars for AMD (15Min)
+[2026-08-08 18:56:25] [INFO] [TradingBot.DataCollector]: Fetched 253 historical bars for DRAM (15Min)
+[2026-08-08 18:56:26] [INFO] [TradingBot.DataCollector]: Fetched 223 historical bars for TSM (15Min)
+[2026-08-08 18:56:26] [INFO] [TradingBot]: Warm-up historical candles loaded successfully.
+[2026-08-08 18:56:26] [INFO] [TradingBot]: Starting live market data stream subscriber...
+[2026-08-08 18:56:26] [INFO] [TradingBot.DataCollector]: Subscribing to real-time stream for symbols: ['AAPL', 'NVDA', 'MSFT', 'AMD', 'DRAM', 'TSM']
+[2026-08-08 18:56:26] [INFO] [TradingBot.DataCollector]: Alpaca WebSocket stream connected.
+[2026-08-08 18:56:26] [INFO] [TradingBot.HealthMonitor]: Health monitor service started (Interval: 60 minutes)
+[2026-08-08 20:27:45] [INFO] [TradingBot]: Initializing Algorithmic Day Trading Engine (Multi-Strategy Asset Router)...
+[2026-08-08 20:27:45] [INFO] [TradingBot]: Mode: PAPER | Base URL: https://paper-api.alpaca.markets
+[2026-08-08 20:27:45] [INFO] [TradingBot]: Symbol Routing: AAPL -> Strategy [VWAP_Breakout]
+[2026-08-08 20:27:45] [INFO] [TradingBot]: Symbol Routing: NVDA -> Strategy [RSI_MeanReversion]
+[2026-08-08 20:27:45] [INFO] [TradingBot]: Symbol Routing: MSFT -> Strategy [MA_Crossover]
+[2026-08-08 20:27:45] [INFO] [TradingBot]: Symbol Routing: AMD -> Strategy [MA_Crossover]
+[2026-08-08 20:27:45] [INFO] [TradingBot]: Symbol Routing: DRAM -> Strategy [RSI_MeanReversion]
+[2026-08-08 20:27:45] [INFO] [TradingBot]: Symbol Routing: TSM -> Strategy [RSI_MeanReversion]
+[2026-08-08 20:27:45] [INFO] [TradingBot]: Symbol Routing: TQQQ -> Strategy [VWAP_Breakout]
+[2026-08-08 20:27:45] [INFO] [TradingBot]: Symbol Routing: SOXL -> Strategy [MA_Crossover]
+[2026-08-08 20:27:46] [INFO] [TradingBot]: Connected to Alpaca Account. Equity: $100,428.25
+[2026-08-08 20:27:48] [INFO] [TradingBot.DataCollector]: Fetched 251 historical bars for AAPL (15Min)
+[2026-08-08 20:27:49] [INFO] [TradingBot.DataCollector]: Fetched 243 historical bars for NVDA (15Min)
+[2026-08-08 20:27:50] [INFO] [TradingBot.DataCollector]: Fetched 245 historical bars for MSFT (15Min)
+[2026-08-08 20:27:51] [INFO] [TradingBot.DataCollector]: Fetched 232 historical bars for AMD (15Min)
+[2026-08-08 20:27:52] [INFO] [TradingBot.DataCollector]: Fetched 253 historical bars for DRAM (15Min)
+[2026-08-08 20:27:53] [INFO] [TradingBot.DataCollector]: Fetched 223 historical bars for TSM (15Min)
+[2026-08-08 20:27:55] [INFO] [TradingBot.DataCollector]: Fetched 247 historical bars for TQQQ (15Min)
+[2026-08-08 20:27:56] [INFO] [TradingBot.DataCollector]: Fetched 279 historical bars for SOXL (15Min)
+[2026-08-08 20:27:56] [INFO] [TradingBot]: Warm-up historical candles loaded successfully.
+[2026-08-08 20:27:56] [INFO] [TradingBot]: Starting live market data stream subscriber...
+[2026-08-08 20:27:56] [INFO] [TradingBot.DataCollector]: Subscribing to real-time stream for symbols: ['AAPL', 'NVDA', 'MSFT', 'AMD', 'DRAM', 'TSM', 'TQQQ', 'SOXL']
+[2026-08-08 20:27:56] [INFO] [TradingBot.DataCollector]: Alpaca WebSocket stream connected.
+[2026-08-08 20:27:56] [INFO] [TradingBot.HealthMonitor]: Health monitor service started (Interval: 60 minutes)
+[2026-08-10 20:50:45] [INFO] [TradingBot]: Initializing Algorithmic Day Trading Engine (Multi-Strategy Asset Router)...
+[2026-08-10 20:50:45] [INFO] [TradingBot]: Mode: PAPER | Base URL: https://paper-api.alpaca.markets
+[2026-08-10 20:50:45] [INFO] [TradingBot]: Symbol Routing: AAPL -> Strategy [VWAP_Breakout]
+[2026-08-10 20:50:45] [INFO] [TradingBot]: Symbol Routing: NVDA -> Strategy [RSI_MeanReversion]
+[2026-08-10 20:50:45] [INFO] [TradingBot]: Symbol Routing: MSFT -> Strategy [MA_Crossover]
+[2026-08-10 20:50:45] [INFO] [TradingBot]: Symbol Routing: AMD -> Strategy [MA_Crossover]
+[2026-08-10 20:50:45] [INFO] [TradingBot]: Symbol Routing: DRAM -> Strategy [RSI_MeanReversion]
+[2026-08-10 20:50:45] [INFO] [TradingBot]: Symbol Routing: TSM -> Strategy [RSI_MeanReversion]
+[2026-08-10 20:50:45] [INFO] [TradingBot]: Symbol Routing: TQQQ -> Strategy [VWAP_Breakout]
+[2026-08-10 20:50:45] [INFO] [TradingBot]: Symbol Routing: SOXL -> Strategy [MA_Crossover]
+[2026-08-10 20:50:46] [INFO] [TradingBot]: Connected to Alpaca Account. Equity: $97,714.41
+[2026-08-10 20:50:47] [INFO] [TradingBot.DataCollector]: Fetched 181 historical bars for AAPL (15Min)
+[2026-08-10 20:50:48] [INFO] [TradingBot.DataCollector]: Fetched 179 historical bars for NVDA (15Min)
+[2026-08-10 20:50:49] [INFO] [TradingBot.DataCollector]: Fetched 175 historical bars for MSFT (15Min)
+[2026-08-10 20:50:49] [INFO] [TradingBot.DataCollector]: Fetched 173 historical bars for AMD (15Min)
+[2026-08-10 20:50:50] [INFO] [TradingBot.DataCollector]: Fetched 182 historical bars for DRAM (15Min)
+[2026-08-10 20:50:51] [INFO] [TradingBot.DataCollector]: Fetched 166 historical bars for TSM (15Min)
+[2026-08-10 20:50:52] [INFO] [TradingBot.DataCollector]: Fetched 183 historical bars for TQQQ (15Min)
+[2026-08-10 20:50:53] [INFO] [TradingBot.DataCollector]: Fetched 209 historical bars for SOXL (15Min)
+[2026-08-10 20:50:53] [INFO] [TradingBot]: Warm-up historical candles loaded successfully.
+[2026-08-10 20:50:53] [INFO] [TradingBot]: Starting live market data stream subscriber...
+[2026-08-10 20:50:53] [INFO] [TradingBot.DataCollector]: Subscribing to real-time stream for symbols: ['AAPL', 'NVDA', 'MSFT', 'AMD', 'DRAM', 'TSM', 'TQQQ', 'SOXL']
+[2026-08-10 20:50:53] [INFO] [TradingBot.DataCollector]: Alpaca WebSocket stream connected.
+[2026-08-10 20:50:53] [INFO] [TradingBot.HealthMonitor]: Health monitor service started (Interval: 60 minutes)
+[2026-08-10 20:55:00] [INFO] [TradingBot]: BUY Signal Triggered for MSFT using [MA_Crossover]! EMA 9/21 Golden Cross above VWAP (Close: $506.41, EMA9: $501.71 > EMA21: $501.07)
+[2026-08-10 20:55:02] [INFO] [TradingBot.RiskManager]: Position Sizing: Risk=$1954.29 | Risk/Share=$7.60 -> Sized Shares: 28 ($14,179.48)
+[2026-08-10 20:55:02] [INFO] [TradingBot.OrderController]: Submitting BUY Bracket Order: MSFT x 28 | SL: $498.81 | TP: $521.6
+[2026-08-10 20:55:03] [INFO] [TradingBot.OrderController]: Bracket Order successfully placed! ID: c569e8f0-a906-48e8-9017-b48a8abc8da0
+[2026-08-10 20:55:03] [INFO] [TradingBot.RiskManager]: Recorded day trade at 2026-08-10 09:55:03 EST. Rolling count: 1
+[2026-08-10 20:58:00] [INFO] [TradingBot]: BUY Signal Triggered for MSFT using [MA_Crossover]! EMA 9/21 Golden Cross above VWAP (Close: $506.66, EMA9: $501.76 > EMA21: $501.10)
+[2026-08-10 20:58:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for MSFT: Position already open for MSFT.
+[2026-08-10 20:59:00] [INFO] [TradingBot]: BUY Signal Triggered for MSFT using [MA_Crossover]! EMA 9/21 Golden Cross above VWAP (Close: $507.42, EMA9: $501.91 > EMA21: $501.17)
+[2026-08-10 20:59:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for MSFT: Position already open for MSFT.
+[2026-08-10 21:00:00] [INFO] [TradingBot]: BUY Signal Triggered for MSFT using [MA_Crossover]! EMA 9/21 Golden Cross above VWAP (Close: $507.55, EMA9: $501.94 > EMA21: $501.18)
+[2026-08-10 21:00:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for MSFT: Position already open for MSFT.
+[2026-08-10 23:31:00] [INFO] [TradingBot]: BUY Signal Triggered for NVDA using [RSI_MeanReversion]! RSI Mean Reversion (RSI bounced from 31.3 to 32.9 @ $218.52)
+[2026-08-10 23:31:02] [INFO] [TradingBot.RiskManager]: Position Sizing: Risk=$1956.20 | Risk/Share=$2.62 -> Sized Shares: 67 ($14,640.84)
+[2026-08-10 23:31:02] [INFO] [TradingBot.OrderController]: Submitting BUY Bracket Order: NVDA x 67 | SL: $215.9 | TP: $223.76
+[2026-08-10 23:31:03] [INFO] [TradingBot.OrderController]: Bracket Order successfully placed! ID: e20d1224-b63f-4d87-a5ac-ee9ec236162e
+[2026-08-10 23:31:03] [INFO] [TradingBot.RiskManager]: Recorded day trade at 2026-08-10 12:31:03 EST. Rolling count: 2
+[2026-08-10 23:46:00] [INFO] [TradingBot]: BUY Signal Triggered for NVDA using [RSI_MeanReversion]! RSI Mean Reversion (RSI bounced from 26.6 to 27.0 @ $217.21)
+[2026-08-10 23:46:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for NVDA: Position already open for NVDA.
+[2026-08-10 23:47:00] [INFO] [TradingBot]: BUY Signal Triggered for NVDA using [RSI_MeanReversion]! RSI Mean Reversion (RSI bounced from 26.6 to 28.1 @ $217.32)
+[2026-08-10 23:47:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for NVDA: Position already open for NVDA.
+[2026-08-10 23:48:00] [INFO] [TradingBot]: BUY Signal Triggered for NVDA using [RSI_MeanReversion]! RSI Mean Reversion (RSI bounced from 26.6 to 28.8 @ $217.40)
+[2026-08-10 23:48:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for NVDA: Position already open for NVDA.
+[2026-08-10 23:49:00] [INFO] [TradingBot]: BUY Signal Triggered for NVDA using [RSI_MeanReversion]! RSI Mean Reversion (RSI bounced from 26.6 to 27.2 @ $217.23)
+[2026-08-10 23:49:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for NVDA: Position already open for NVDA.
+[2026-08-10 23:50:00] [INFO] [TradingBot]: BUY Signal Triggered for NVDA using [RSI_MeanReversion]! RSI Mean Reversion (RSI bounced from 26.6 to 29.5 @ $217.47)
+[2026-08-10 23:50:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for NVDA: Position already open for NVDA.
+[2026-08-10 23:53:00] [INFO] [TradingBot]: BUY Signal Triggered for NVDA using [RSI_MeanReversion]! RSI Mean Reversion (RSI bounced from 26.6 to 26.6 @ $217.17)
+[2026-08-10 23:53:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for NVDA: Position already open for NVDA.
+[2026-08-11 00:00:00] [INFO] [TradingBot]: BUY Signal Triggered for NVDA using [RSI_MeanReversion]! RSI Mean Reversion (RSI bounced from 26.6 to 30.8 @ $217.62)
+[2026-08-11 00:00:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for NVDA: Position already open for NVDA.
+[2026-08-11 00:01:00] [INFO] [TradingBot]: BUY Signal Triggered for NVDA using [RSI_MeanReversion]! RSI Mean Reversion (RSI bounced from 30.8 to 31.1 @ $217.65)
+[2026-08-11 00:01:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for NVDA: Position already open for NVDA.
+[2026-08-11 00:08:00] [INFO] [TradingBot]: BUY Signal Triggered for NVDA using [RSI_MeanReversion]! RSI Mean Reversion (RSI bounced from 30.8 to 31.9 @ $217.74)
+[2026-08-11 00:08:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for NVDA: Position already open for NVDA.
+[2026-08-11 00:09:00] [INFO] [TradingBot]: BUY Signal Triggered for NVDA using [RSI_MeanReversion]! RSI Mean Reversion (RSI bounced from 30.8 to 33.9 @ $217.96)
+[2026-08-11 00:09:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for NVDA: Position already open for NVDA.
+[2026-08-11 00:10:00] [INFO] [TradingBot]: BUY Signal Triggered for NVDA using [RSI_MeanReversion]! RSI Mean Reversion (RSI bounced from 30.8 to 35.3 @ $218.12)
+[2026-08-11 00:10:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for NVDA: Position already open for NVDA.
+[2026-08-11 00:11:00] [INFO] [TradingBot]: BUY Signal Triggered for NVDA using [RSI_MeanReversion]! RSI Mean Reversion (RSI bounced from 30.8 to 36.0 @ $218.21)
+[2026-08-11 00:11:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for NVDA: Position already open for NVDA.
+[2026-08-11 00:12:00] [INFO] [TradingBot]: BUY Signal Triggered for NVDA using [RSI_MeanReversion]! RSI Mean Reversion (RSI bounced from 30.8 to 38.5 @ $218.53)
+[2026-08-11 00:12:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for NVDA: Position already open for NVDA.
+[2026-08-11 00:13:00] [INFO] [TradingBot]: BUY Signal Triggered for NVDA using [RSI_MeanReversion]! RSI Mean Reversion (RSI bounced from 30.8 to 38.5 @ $218.53)
+[2026-08-11 00:13:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for NVDA: Position already open for NVDA.
+[2026-08-11 00:14:00] [INFO] [TradingBot]: BUY Signal Triggered for NVDA using [RSI_MeanReversion]! RSI Mean Reversion (RSI bounced from 30.8 to 39.0 @ $218.59)
+[2026-08-11 00:14:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for NVDA: Position already open for NVDA.
+[2026-08-11 00:15:00] [INFO] [TradingBot]: BUY Signal Triggered for NVDA using [RSI_MeanReversion]! RSI Mean Reversion (RSI bounced from 30.8 to 39.4 @ $218.65)
+[2026-08-11 00:15:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for NVDA: Position already open for NVDA.
+[2026-08-11 02:45:00] [WARNING] [TradingBot.EODFlusher]: EOD Flush trigger activated at 15:45:00 EST! Target time: 15:45
+[2026-08-11 02:45:01] [WARNING] [TradingBot]: EOD Flush Triggered! Closing all open positions...
+[2026-08-11 02:45:01] [WARNING] [TradingBot.OrderController]: Initiating liquidation of ALL open positions...
+[2026-08-11 02:45:02] [INFO] [TradingBot.OrderController]: Liquidation requests submitted for open positions.
+[2026-08-11 21:14:50] [INFO] [TradingBot]: Initializing Algorithmic Day Trading Engine (Multi-Strategy Asset Router)...
+[2026-08-11 21:14:50] [INFO] [TradingBot]: Mode: PAPER | Base URL: https://paper-api.alpaca.markets
+[2026-08-11 21:14:50] [INFO] [TradingBot]: Symbol Routing: AAPL -> Strategy [VWAP_Breakout]
+[2026-08-11 21:14:50] [INFO] [TradingBot]: Symbol Routing: NVDA -> Strategy [RSI_MeanReversion]
+[2026-08-11 21:14:50] [INFO] [TradingBot]: Symbol Routing: MSFT -> Strategy [MA_Crossover]
+[2026-08-11 21:14:50] [INFO] [TradingBot]: Symbol Routing: AMD -> Strategy [MA_Crossover]
+[2026-08-11 21:14:50] [INFO] [TradingBot]: Symbol Routing: DRAM -> Strategy [RSI_MeanReversion]
+[2026-08-11 21:14:50] [INFO] [TradingBot]: Symbol Routing: TSM -> Strategy [RSI_MeanReversion]
+[2026-08-11 21:14:50] [INFO] [TradingBot]: Symbol Routing: TQQQ -> Strategy [VWAP_Breakout]
+[2026-08-11 21:14:50] [INFO] [TradingBot]: Symbol Routing: SOXL -> Strategy [MA_Crossover]
+[2026-08-11 21:14:51] [INFO] [TradingBot]: Connected to Alpaca Account. Equity: $97,685.28
+[2026-08-11 21:14:52] [INFO] [TradingBot.DataCollector]: Fetched 175 historical bars for AAPL (15Min)
+[2026-08-11 21:14:53] [INFO] [TradingBot.DataCollector]: Fetched 179 historical bars for NVDA (15Min)
+[2026-08-11 21:14:54] [INFO] [TradingBot.DataCollector]: Fetched 171 historical bars for MSFT (15Min)
+[2026-08-11 21:14:55] [INFO] [TradingBot.DataCollector]: Fetched 174 historical bars for AMD (15Min)
+[2026-08-11 21:14:55] [INFO] [TradingBot.DataCollector]: Fetched 176 historical bars for DRAM (15Min)
+[2026-08-11 21:14:56] [INFO] [TradingBot.DataCollector]: Fetched 165 historical bars for TSM (15Min)
+[2026-08-11 21:14:57] [INFO] [TradingBot.DataCollector]: Fetched 184 historical bars for TQQQ (15Min)
+[2026-08-11 21:14:58] [INFO] [TradingBot.DataCollector]: Fetched 207 historical bars for SOXL (15Min)
+[2026-08-11 21:14:58] [INFO] [TradingBot]: Warm-up historical candles loaded successfully.
+[2026-08-11 21:14:58] [INFO] [TradingBot]: Starting live market data stream subscriber...
+[2026-08-11 21:14:58] [INFO] [TradingBot.DataCollector]: Subscribing to real-time stream for symbols: ['AAPL', 'NVDA', 'MSFT', 'AMD', 'DRAM', 'TSM', 'TQQQ', 'SOXL']
+[2026-08-11 21:14:58] [INFO] [TradingBot.DataCollector]: Alpaca WebSocket stream connected.
+[2026-08-11 21:14:58] [INFO] [TradingBot.HealthMonitor]: Health monitor service started (Interval: 60 minutes)
+[2026-08-11 21:30:00] [INFO] [TradingBot]: BUY Signal Triggered for TQQQ using [VWAP_Breakout]! VWAP Breakout detected (Close: $74.08 > VWAP: $74.00, Vol: 42174 > Avg: 21899, RSI: 50.8)
+[2026-08-11 21:30:02] [INFO] [TradingBot.RiskManager]: Position Sizing: Risk=$1952.83 | Risk/Share=$1.11 -> Sized Shares: 197 ($14,592.78)
+[2026-08-11 21:30:02] [INFO] [TradingBot.OrderController]: Submitting BUY Bracket Order: TQQQ x 197 | SL: $72.96 | TP: $76.3
+[2026-08-11 21:30:03] [INFO] [TradingBot.OrderController]: Bracket Order successfully placed! ID: 5748f527-45f2-4209-a772-02ef113212ed
+[2026-08-11 21:30:03] [INFO] [TradingBot.RiskManager]: Recorded day trade at 2026-08-11 10:30:03 EST. Rolling count: 1
+[2026-08-11 21:53:00] [INFO] [TradingBot]: BUY Signal Triggered for TQQQ using [VWAP_Breakout]! VWAP Breakout detected (Close: $74.23 > VWAP: $73.98, Vol: 26589 > Avg: 22133, RSI: 54.0)
+[2026-08-11 21:53:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for TQQQ: Position already open for TQQQ.
+[2026-08-11 21:54:00] [INFO] [TradingBot]: BUY Signal Triggered for TQQQ using [VWAP_Breakout]! VWAP Breakout detected (Close: $74.15 > VWAP: $73.98, Vol: 29194 > Avg: 22263, RSI: 52.5)
+[2026-08-11 21:54:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for TQQQ: Position already open for TQQQ.
+[2026-08-11 21:55:00] [INFO] [TradingBot]: BUY Signal Triggered for TQQQ using [VWAP_Breakout]! VWAP Breakout detected (Close: $74.20 > VWAP: $73.99, Vol: 32200 > Avg: 22414, RSI: 53.5)
+[2026-08-11 21:55:02] [WARNING] [TradingBot]: Trade blocked by Risk Manager for TQQQ: Position already open for TQQQ.
+[2026-08-11 21:56:00] [INFO] [TradingBot]: BUY Signal Triggered for TQQQ using [VWAP_Breakout]! VWAP Breakout detected (Close: $74.20 > VWAP: $73.99, Vol: 33452 > Avg: 22476, RSI: 53.5)
+[2026-08-11 21:56:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for TQQQ: Position already open for TQQQ.
+[2026-08-11 21:57:00] [INFO] [TradingBot]: BUY Signal Triggered for TQQQ using [VWAP_Breakout]! VWAP Breakout detected (Close: $74.18 > VWAP: $73.99, Vol: 34170 > Avg: 22512, RSI: 53.1)
+[2026-08-11 21:57:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for TQQQ: Position already open for TQQQ.
+[2026-08-11 21:58:00] [INFO] [TradingBot]: BUY Signal Triggered for TQQQ using [VWAP_Breakout]! VWAP Breakout detected (Close: $74.17 > VWAP: $73.98, Vol: 34870 > Avg: 22547, RSI: 52.8)
+[2026-08-11 21:58:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for TQQQ: Position already open for TQQQ.
+[2026-08-11 21:59:00] [INFO] [TradingBot]: BUY Signal Triggered for TQQQ using [VWAP_Breakout]! VWAP Breakout detected (Close: $74.10 > VWAP: $73.98, Vol: 39217 > Avg: 22764, RSI: 51.5)
+[2026-08-11 21:59:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for TQQQ: Position already open for TQQQ.
+[2026-08-11 22:00:00] [INFO] [TradingBot]: BUY Signal Triggered for TQQQ using [VWAP_Breakout]! VWAP Breakout detected (Close: $74.06 > VWAP: $73.98, Vol: 40790 > Avg: 22843, RSI: 50.7)
+[2026-08-11 22:00:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for TQQQ: Position already open for TQQQ.
+[2026-08-12 02:22:00] [INFO] [TradingBot]: BUY Signal Triggered for AMD using [MA_Crossover]! EMA 9/21 Golden Cross above VWAP (Close: $474.75, EMA9: $471.44 > EMA21: $471.08)
+[2026-08-12 02:22:02] [INFO] [TradingBot.RiskManager]: Position Sizing: Risk=$1946.73 | Risk/Share=$7.12 -> Sized Shares: 30 ($14,242.50)
+[2026-08-12 02:22:02] [INFO] [TradingBot.OrderController]: Submitting BUY Bracket Order: AMD x 30 | SL: $467.63 | TP: $488.99
+[2026-08-12 02:22:03] [INFO] [TradingBot.OrderController]: Bracket Order successfully placed! ID: 6812bdc1-54be-4785-b028-24c25c31033b
+[2026-08-12 02:22:03] [INFO] [TradingBot.RiskManager]: Recorded day trade at 2026-08-11 15:22:03 EST. Rolling count: 2
+[2026-08-12 02:54:00] [WARNING] [TradingBot.EODFlusher]: EOD Flush trigger activated at 15:54:00 EST! Target time: 15:45
+[2026-08-12 02:54:00] [WARNING] [TradingBot]: EOD Flush Triggered! Closing all open positions...
+[2026-08-12 02:54:00] [WARNING] [TradingBot.OrderController]: Initiating liquidation of ALL open positions...
+[2026-08-12 02:54:01] [INFO] [TradingBot.OrderController]: Liquidation requests submitted for open positions.
+[2026-08-12 21:38:05] [INFO] [TradingBot]: Initializing Algorithmic Day Trading Engine (Multi-Strategy Asset Router)...
+[2026-08-12 21:38:05] [INFO] [TradingBot]: Mode: PAPER | Base URL: https://paper-api.alpaca.markets
+[2026-08-12 21:38:05] [INFO] [TradingBot]: Symbol Routing: AAPL -> Strategy [Swing_TrendPullback]
+[2026-08-12 21:38:05] [INFO] [TradingBot]: Symbol Routing: NVDA -> Strategy [Swing_TrendPullback]
+[2026-08-12 21:38:05] [INFO] [TradingBot]: Symbol Routing: MSFT -> Strategy [Swing_Breakout]
+[2026-08-12 21:38:05] [INFO] [TradingBot]: Symbol Routing: AMD -> Strategy [Swing_Breakout]
+[2026-08-12 21:38:05] [INFO] [TradingBot]: Symbol Routing: DRAM -> Strategy [Swing_TrendPullback]
+[2026-08-12 21:38:05] [INFO] [TradingBot]: Symbol Routing: TSM -> Strategy [Swing_Breakout]
+[2026-08-12 21:38:05] [INFO] [TradingBot]: Symbol Routing: TQQQ -> Strategy [Swing_Breakout]
+[2026-08-12 21:38:05] [INFO] [TradingBot]: Symbol Routing: SOXL -> Strategy [Swing_Breakout]
+[2026-08-12 21:38:06] [INFO] [TradingBot]: Connected to Alpaca Account. Equity: $97,269.75
+[2026-08-12 21:38:07] [INFO] [TradingBot.DataCollector]: Fetched 203 historical bars for AAPL (15Min)
+[2026-08-12 21:38:08] [INFO] [TradingBot.DataCollector]: Fetched 206 historical bars for NVDA (15Min)
+[2026-08-12 21:38:09] [INFO] [TradingBot.DataCollector]: Fetched 197 historical bars for MSFT (15Min)
+[2026-08-12 21:38:10] [INFO] [TradingBot.DataCollector]: Fetched 200 historical bars for AMD (15Min)
+[2026-08-12 21:38:11] [INFO] [TradingBot.DataCollector]: Fetched 203 historical bars for DRAM (15Min)
+[2026-08-12 21:38:12] [INFO] [TradingBot.DataCollector]: Fetched 191 historical bars for TSM (15Min)
+[2026-08-12 21:38:13] [INFO] [TradingBot.DataCollector]: Fetched 216 historical bars for TQQQ (15Min)
+[2026-08-12 21:38:14] [INFO] [TradingBot.DataCollector]: Fetched 238 historical bars for SOXL (15Min)
+[2026-08-12 21:38:14] [INFO] [TradingBot]: Warm-up historical candles (15Min) loaded successfully.
+[2026-08-12 21:38:14] [INFO] [TradingBot]: Starting live market data stream subscriber...
+[2026-08-12 21:38:14] [INFO] [TradingBot.DataCollector]: Subscribing to real-time stream for symbols: ['AAPL', 'NVDA', 'MSFT', 'AMD', 'DRAM', 'TSM', 'TQQQ', 'SOXL']
+[2026-08-12 21:38:14] [INFO] [TradingBot.DataCollector]: Alpaca WebSocket stream connected.
+[2026-08-12 21:38:14] [INFO] [TradingBot.HealthMonitor]: Health monitor service started (Interval: 60 minutes)
+[2026-08-12 21:38:23] [INFO] [TradingBot]: Initializing Algorithmic Day Trading Engine (Multi-Strategy Asset Router)...
+[2026-08-12 21:38:23] [INFO] [TradingBot]: Mode: PAPER | Base URL: https://paper-api.alpaca.markets
+[2026-08-12 21:38:23] [INFO] [TradingBot]: Symbol Routing: AAPL -> Strategy [Swing_TrendPullback]
+[2026-08-12 21:38:23] [INFO] [TradingBot]: Symbol Routing: NVDA -> Strategy [Swing_TrendPullback]
+[2026-08-12 21:38:23] [INFO] [TradingBot]: Symbol Routing: MSFT -> Strategy [Swing_Breakout]
+[2026-08-12 21:38:23] [INFO] [TradingBot]: Symbol Routing: AMD -> Strategy [Swing_Breakout]
+[2026-08-12 21:38:23] [INFO] [TradingBot]: Symbol Routing: DRAM -> Strategy [Swing_TrendPullback]
+[2026-08-12 21:38:23] [INFO] [TradingBot]: Symbol Routing: TSM -> Strategy [Swing_Breakout]
+[2026-08-12 21:38:23] [INFO] [TradingBot]: Symbol Routing: TQQQ -> Strategy [Swing_Breakout]
+[2026-08-12 21:38:23] [INFO] [TradingBot]: Symbol Routing: SOXL -> Strategy [Swing_Breakout]
+[2026-08-12 21:38:24] [INFO] [TradingBot]: Connected to Alpaca Account. Equity: $97,269.75
+[2026-08-12 21:38:25] [INFO] [TradingBot.DataCollector]: Fetched 208 historical bars for AAPL (1Hour)
+[2026-08-12 21:38:26] [INFO] [TradingBot.DataCollector]: Fetched 210 historical bars for NVDA (1Hour)
+[2026-08-12 21:38:27] [INFO] [TradingBot.DataCollector]: Fetched 215 historical bars for MSFT (1Hour)
+[2026-08-12 21:38:28] [INFO] [TradingBot.DataCollector]: Fetched 216 historical bars for AMD (1Hour)
+[2026-08-12 21:38:29] [INFO] [TradingBot.DataCollector]: Fetched 218 historical bars for DRAM (1Hour)
+[2026-08-12 21:38:30] [INFO] [TradingBot.DataCollector]: Fetched 210 historical bars for TSM (1Hour)
+[2026-08-12 21:38:32] [INFO] [TradingBot.DataCollector]: Fetched 225 historical bars for TQQQ (1Hour)
+[2026-08-12 21:38:33] [INFO] [TradingBot.DataCollector]: Fetched 225 historical bars for SOXL (1Hour)
+[2026-08-12 21:38:33] [INFO] [TradingBot]: Warm-up historical candles (1Hour) loaded successfully.
+[2026-08-12 21:38:33] [INFO] [TradingBot]: Starting live market data stream subscriber...
+[2026-08-12 21:38:33] [INFO] [TradingBot.DataCollector]: Subscribing to real-time stream for symbols: ['AAPL', 'NVDA', 'MSFT', 'AMD', 'DRAM', 'TSM', 'TQQQ', 'SOXL']
+[2026-08-12 21:38:33] [INFO] [TradingBot.DataCollector]: Alpaca WebSocket stream connected.
+[2026-08-12 21:38:33] [INFO] [TradingBot.HealthMonitor]: Health monitor service started (Interval: 60 minutes)
