@@ -35,6 +35,9 @@ class Settings(BaseSettings):
     PDT_ACCOUNT_THRESHOLD: float = Field(default=25000.00)
     ENABLE_EOD_FLUSH: bool = Field(default=False)  # Allow overnight multi-day holds in swing mode
     EOD_FLUSH_TIME_EST: str = Field(default="15:45")
+    ENABLE_WEEKLY_FLUSH: bool = Field(default=True)  # Liquidate remaining positions on Friday at 15:45 EST (1-week max horizon)
+    WEEKLY_FLUSH_TIME_EST: str = Field(default="15:45")
+    MAX_HOLDING_DAYS: int = Field(default=5)  # Maximum business days to hold a position before liquidation
     ATR_MULTIPLIER: float = Field(default=2.5)
 
     # Timeframe & Watchlist (Tech Equities + 3x Leveraged Tech ETFs)

@@ -12,12 +12,13 @@ from src.monitoring.health import HealthMonitor
 from src.data.collector import MarketDataCollector
 from src.data.resampler import CandleResampler
 from src.data.indicators import add_all_indicators
+from src.strategy.base import StrategyBase
 from src.strategy.swing_trend import SwingTrendPullbackStrategy, SwingBreakoutStrategy
 from src.strategy.vwap_breakout import VWAPBreakoutStrategy
 from src.strategy.rsi_reversion import RSIReversionStrategy
 from src.strategy.ma_crossover import MovingAverageCrossoverStrategy
 from src.risk.risk_manager import RiskManager
-from src.risk.eod_flusher import EODFlusher
+from src.risk.eod_flusher import HorizonFlusher, EODFlusher
 from src.execution.order_controller import OrderController
 from src.utils.time_utils import is_market_open, get_est_now
 
@@ -38,8 +39,8 @@ DEFAULT_SYMBOL_STRATEGY_MAP: Dict[str, StrategyBase] = {
 class TradingBotEngine:
     """
     Main Algorithmic Trading Engine Orchestrator.
-    Supports Multi-Day / Weekly Swing Trading (1-Hour/Daily) and Intraday Day Trading.
-    Maps each stock to its highest performing strategy with ATR Trailing Stops.
+    Supports Target-Driven Dynamic Holding within a 1-Week Maximum Timeframe.
+    Maps each stock to its highest performing strategy with ATR Trailing Stops and GTC Bracket Orders.
     """
 
     def __init__(self, symbol_strategy_map: Dict[str, StrategyBase] = None):
@@ -47,7 +48,7 @@ class TradingBotEngine:
         self.notifier = NotificationEngine(settings=self.settings)
         self.order_controller = OrderController(settings=self.settings)
         self.risk_manager = RiskManager(settings=self.settings)
-        self.eod_flusher = EODFlusher(settings=self.settings)
+        self.flusher = HorizonFlusher(settings=self.settings)
         self.collector = MarketDataCollector(settings=self.settings)
 
         # Resample timeframe (e.g., '1h' for swing, '15min' for daytrade)
@@ -105,13 +106,17 @@ class TradingBotEngine:
         """
         Real-time callback invoked whenever a new 1-minute streaming bar is received.
         """
-        # 1. EOD Flush Check (Only if enabled, e.g. Day Trading mode)
-        if self.eod_flusher.should_flush():
+        # 1. 1-Week Horizon / EOD Flush Check
+        if self.flusher.should_flush():
             open_positions = self.order_controller.get_positions()
             if open_positions:
-                logger.warning("EOD Flush Triggered! Closing all open positions...")
+                reason = getattr(self.flusher, "last_flush_reason", "FLUSH")
+                logger.warning(f"Position Liquidation Triggered ({reason})! Closing all {len(open_positions)} open positions...")
                 self.order_controller.close_all_positions()
-                self.notifier.notify_eod_flush(len(open_positions))
+                if reason == "WEEKLY_HORIZON":
+                    self.notifier.notify_weekly_flush(len(open_positions))
+                else:
+                    self.notifier.notify_eod_flush(len(open_positions))
             return
 
         # 2. Market Open Guard
@@ -156,7 +161,7 @@ class TradingBotEngine:
                 logger.warning(f"Position sizing calculated 0 shares for {symbol}. Skipping order.")
                 return
 
-            # 8. Submit Alpaca Bracket Order
+            # 8. Submit Alpaca Bracket Order (GTC: Holds until Take Profit Target or Stop Loss is reached)
             order_res = self.order_controller.submit_bracket_order(
                 symbol=symbol,
                 qty=shares,
@@ -166,6 +171,7 @@ class TradingBotEngine:
             )
 
             if "error" not in order_res:
+                self.flusher.record_position_entry(symbol)
                 self.risk_manager.record_day_trade()
                 self.notifier.notify_trade_entry(
                     symbol=symbol,

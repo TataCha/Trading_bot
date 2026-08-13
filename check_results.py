@@ -52,9 +52,9 @@ def check():
             })
         print(tabulate(pos_table, headers="keys", tablefmt="fancy_grid"))
 
-    # 3. Fill Activities (Trades executed on 2026-08-10 / 2026-08-11)
+    # 3. Fill Activities (Trades executed on 2026-08-12 / 2026-08-13)
     res_act = requests.get(
-        f"{settings.ALPACA_BASE_URL}/v2/account/activities?activity_types=FILL&after=2026-08-10T00:00:00Z&direction=asc",
+        f"{settings.ALPACA_BASE_URL}/v2/account/activities?activity_types=FILL&after=2026-08-12T00:00:00Z&direction=asc",
         headers=headers
     )
     activities = res_act.json()

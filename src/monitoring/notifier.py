@@ -78,6 +78,14 @@ class NotificationEngine:
         msg = f"Liquidation order dispatched for `{positions_closed}` open positions before market close."
         self.send_notification(title, msg, level="WARNING", color=15105570)  # Orange
 
+    def notify_weekly_flush(self, positions_closed: int):
+        title = "🗓️ 1-WEEK HORIZON FLUSH COMPLETED"
+        msg = (
+            f"End-of-Week Friday liquidation dispatched for `{positions_closed}` open positions.\n"
+            f"🎯 1-week holding timeframe complete. Zero weekend exposure."
+        )
+        self.send_notification(title, msg, level="WARNING", color=15105570)  # Orange
+
     def notify_heartbeat(self, equity: float, active_positions: int):
         title = "💓 Heartbeat Ping"
         msg = f"System operating normally.\n💰 Account Equity: `${equity:,.2f}`\n📊 Open Positions: `{active_positions}`"
