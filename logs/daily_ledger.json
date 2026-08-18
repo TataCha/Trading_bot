@@ -1,0 +1,17 @@
+{
+  "daily_sessions": [
+    {
+      "date": "2026-08-17",
+      "day_of_week": "Monday",
+      "start_equity": 97269.75,
+      "end_equity": 96064.67,
+      "daily_pnl": -1205.08,
+      "daily_pnl_pct": -1.24,
+      "realized_pnl": 0.0,
+      "cash": 53977.27,
+      "stock_value": 42087.4,
+      "open_positions_count": 3,
+      "recorded_at": "2026-08-18T00:15:51.437020-04:00"
+    }
+  ]
+}

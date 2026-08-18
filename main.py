@@ -20,6 +20,7 @@ from src.strategy.ma_crossover import MovingAverageCrossoverStrategy
 from src.risk.risk_manager import RiskManager
 from src.risk.eod_flusher import HorizonFlusher, EODFlusher
 from src.execution.order_controller import OrderController
+from src.monitoring.journal import TradeJournal
 from src.utils.time_utils import is_market_open, get_est_now
 
 logger = setup_logger("TradingBot", level="INFO")
@@ -50,6 +51,7 @@ class TradingBotEngine:
         self.risk_manager = RiskManager(settings=self.settings)
         self.flusher = HorizonFlusher(settings=self.settings)
         self.collector = MarketDataCollector(settings=self.settings)
+        self.journal = TradeJournal(settings=self.settings)
 
         # Resample timeframe (e.g., '1h' for swing, '15min' for daytrade)
         tf = "1h" if "1h" in self.settings.TIMEFRAME.lower() else "15min"
@@ -171,8 +173,20 @@ class TradingBotEngine:
             )
 
             if "error" not in order_res:
+                order_id = order_res.get("id", "N/A")
                 self.flusher.record_position_entry(symbol)
                 self.risk_manager.record_day_trade()
+                self.journal.log_trade_entry(
+                    trade_id=order_id,
+                    symbol=symbol,
+                    strategy=strategy.name,
+                    side="buy",
+                    qty=shares,
+                    entry_price=signal.price,
+                    stop_loss=signal.stop_loss,
+                    take_profit=signal.take_profit,
+                    reason=signal.reason
+                )
                 self.notifier.notify_trade_entry(
                     symbol=symbol,
                     side="buy",

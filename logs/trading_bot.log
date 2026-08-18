@@ -435,3 +435,169 @@
 [2026-08-12 21:38:33] [INFO] [TradingBot.DataCollector]: Subscribing to real-time stream for symbols: ['AAPL', 'NVDA', 'MSFT', 'AMD', 'DRAM', 'TSM', 'TQQQ', 'SOXL']
 [2026-08-12 21:38:33] [INFO] [TradingBot.DataCollector]: Alpaca WebSocket stream connected.
 [2026-08-12 21:38:33] [INFO] [TradingBot.HealthMonitor]: Health monitor service started (Interval: 60 minutes)
+[2026-08-13 21:12:17] [INFO] [TradingBot]: Initializing Algorithmic Day Trading Engine (Multi-Strategy Asset Router)...
+[2026-08-13 21:12:17] [INFO] [TradingBot]: Mode: PAPER | Base URL: https://paper-api.alpaca.markets
+[2026-08-13 21:12:17] [INFO] [TradingBot]: Symbol Routing: AAPL -> Strategy [Swing_TrendPullback]
+[2026-08-13 21:12:17] [INFO] [TradingBot]: Symbol Routing: NVDA -> Strategy [Swing_TrendPullback]
+[2026-08-13 21:12:17] [INFO] [TradingBot]: Symbol Routing: MSFT -> Strategy [Swing_Breakout]
+[2026-08-13 21:12:17] [INFO] [TradingBot]: Symbol Routing: AMD -> Strategy [Swing_Breakout]
+[2026-08-13 21:12:17] [INFO] [TradingBot]: Symbol Routing: DRAM -> Strategy [Swing_TrendPullback]
+[2026-08-13 21:12:17] [INFO] [TradingBot]: Symbol Routing: TSM -> Strategy [Swing_Breakout]
+[2026-08-13 21:12:17] [INFO] [TradingBot]: Symbol Routing: TQQQ -> Strategy [Swing_Breakout]
+[2026-08-13 21:12:17] [INFO] [TradingBot]: Symbol Routing: SOXL -> Strategy [Swing_Breakout]
+[2026-08-13 21:12:17] [INFO] [TradingBot]: Connected to Alpaca Account. Equity: $97,269.75
+[2026-08-13 21:12:18] [INFO] [TradingBot.DataCollector]: Fetched 208 historical bars for AAPL (1Hour)
+[2026-08-13 21:12:19] [INFO] [TradingBot.DataCollector]: Fetched 210 historical bars for NVDA (1Hour)
+[2026-08-13 21:12:20] [INFO] [TradingBot.DataCollector]: Fetched 215 historical bars for MSFT (1Hour)
+[2026-08-13 21:12:22] [INFO] [TradingBot.DataCollector]: Fetched 216 historical bars for AMD (1Hour)
+[2026-08-13 21:12:22] [INFO] [TradingBot.DataCollector]: Fetched 218 historical bars for DRAM (1Hour)
+[2026-08-13 21:12:24] [INFO] [TradingBot.DataCollector]: Fetched 210 historical bars for TSM (1Hour)
+[2026-08-13 21:12:25] [INFO] [TradingBot.DataCollector]: Fetched 225 historical bars for TQQQ (1Hour)
+[2026-08-13 21:12:28] [INFO] [TradingBot.DataCollector]: Fetched 225 historical bars for SOXL (1Hour)
+[2026-08-13 21:12:28] [INFO] [TradingBot]: Warm-up historical candles (1Hour) loaded successfully.
+[2026-08-13 21:12:28] [INFO] [TradingBot]: Starting live market data stream subscriber...
+[2026-08-13 21:12:28] [INFO] [TradingBot.DataCollector]: Subscribing to real-time stream for symbols: ['AAPL', 'NVDA', 'MSFT', 'AMD', 'DRAM', 'TSM', 'TQQQ', 'SOXL']
+[2026-08-13 21:12:28] [INFO] [TradingBot.DataCollector]: Alpaca WebSocket stream connected.
+[2026-08-13 21:12:28] [INFO] [TradingBot.HealthMonitor]: Health monitor service started (Interval: 60 minutes)
+[2026-08-14 11:02:32] [INFO] [TradingBot.DataCollector]: Fetched 198 historical bars for SOXL (1Hour)
+[2026-08-14 11:02:32] [INFO] [TradingBot.DataCollector]: Fetched 190 historical bars for TQQQ (1Hour)
+[2026-08-14 11:02:33] [INFO] [TradingBot.DataCollector]: Fetched 177 historical bars for AMD (1Hour)
+[2026-08-14 11:02:35] [INFO] [TradingBot.DataCollector]: Fetched 183 historical bars for MSFT (1Hour)
+[2026-08-14 11:02:35] [INFO] [TradingBot.DataCollector]: Fetched 172 historical bars for TSM (1Hour)
+[2026-08-14 11:02:36] [INFO] [TradingBot.DataCollector]: Fetched 182 historical bars for NVDA (1Hour)
+[2026-08-14 11:02:37] [INFO] [TradingBot.DataCollector]: Fetched 183 historical bars for AAPL (1Hour)
+[2026-08-14 11:02:38] [INFO] [TradingBot.DataCollector]: Fetched 191 historical bars for DRAM (1Hour)
+[2026-08-14 16:57:33] [INFO] [TradingBot]: Initializing Algorithmic Day Trading Engine (Multi-Strategy Asset Router)...
+[2026-08-14 16:57:33] [INFO] [TradingBot]: Mode: PAPER | Base URL: https://paper-api.alpaca.markets
+[2026-08-14 16:57:33] [INFO] [TradingBot]: Symbol Routing: AAPL -> Strategy [Swing_TrendPullback]
+[2026-08-14 16:57:33] [INFO] [TradingBot]: Symbol Routing: NVDA -> Strategy [Swing_TrendPullback]
+[2026-08-14 16:57:33] [INFO] [TradingBot]: Symbol Routing: MSFT -> Strategy [Swing_Breakout]
+[2026-08-14 16:57:33] [INFO] [TradingBot]: Symbol Routing: AMD -> Strategy [Swing_Breakout]
+[2026-08-14 16:57:33] [INFO] [TradingBot]: Symbol Routing: DRAM -> Strategy [Swing_TrendPullback]
+[2026-08-14 16:57:33] [INFO] [TradingBot]: Symbol Routing: TSM -> Strategy [Swing_Breakout]
+[2026-08-14 16:57:33] [INFO] [TradingBot]: Symbol Routing: TQQQ -> Strategy [Swing_Breakout]
+[2026-08-14 16:57:33] [INFO] [TradingBot]: Symbol Routing: SOXL -> Strategy [Swing_Breakout]
+[2026-08-14 16:57:33] [ERROR] [TradingBot.OrderController]: Account fetch exception: HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/account (Caused by NameResolutionError("HTTPSConnection(host='paper-api.alpaca.markets', port=443): Failed to resolve 'paper-api.alpaca.markets' ([Errno 8] nodename nor servname provided, or not known)"))
+[2026-08-14 16:57:33] [WARNING] [TradingBot]: Could not fetch valid Alpaca equity. Assuming paper mode default ($100,000.00).
+[2026-08-14 16:57:33] [ERROR] [TradingBot.DataCollector]: Error requesting historical data for AAPL: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/AAPL/bars?timeframe=1Hour&start=2026-06-30T05%3A57%3A33Z&end=2026-08-14T05%3A57%3A33Z&limit=10000&adjustment=all&feed=iex (Caused by NameResolutionError("HTTPSConnection(host='data.alpaca.markets', port=443): Failed to resolve 'data.alpaca.markets' ([Errno 8] nodename nor servname provided, or not known)"))
+[2026-08-14 16:57:33] [ERROR] [TradingBot.DataCollector]: Error requesting historical data for NVDA: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/NVDA/bars?timeframe=1Hour&start=2026-06-30T05%3A57%3A33Z&end=2026-08-14T05%3A57%3A33Z&limit=10000&adjustment=all&feed=iex (Caused by NameResolutionError("HTTPSConnection(host='data.alpaca.markets', port=443): Failed to resolve 'data.alpaca.markets' ([Errno 8] nodename nor servname provided, or not known)"))
+[2026-08-14 16:57:33] [ERROR] [TradingBot.DataCollector]: Error requesting historical data for MSFT: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/MSFT/bars?timeframe=1Hour&start=2026-06-30T05%3A57%3A33Z&end=2026-08-14T05%3A57%3A33Z&limit=10000&adjustment=all&feed=iex (Caused by NameResolutionError("HTTPSConnection(host='data.alpaca.markets', port=443): Failed to resolve 'data.alpaca.markets' ([Errno 8] nodename nor servname provided, or not known)"))
+[2026-08-14 16:57:33] [ERROR] [TradingBot.DataCollector]: Error requesting historical data for AMD: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/AMD/bars?timeframe=1Hour&start=2026-06-30T05%3A57%3A33Z&end=2026-08-14T05%3A57%3A33Z&limit=10000&adjustment=all&feed=iex (Caused by NameResolutionError("HTTPSConnection(host='data.alpaca.markets', port=443): Failed to resolve 'data.alpaca.markets' ([Errno 8] nodename nor servname provided, or not known)"))
+[2026-08-14 16:57:33] [ERROR] [TradingBot.DataCollector]: Error requesting historical data for DRAM: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/DRAM/bars?timeframe=1Hour&start=2026-06-30T05%3A57%3A33Z&end=2026-08-14T05%3A57%3A33Z&limit=10000&adjustment=all&feed=iex (Caused by NameResolutionError("HTTPSConnection(host='data.alpaca.markets', port=443): Failed to resolve 'data.alpaca.markets' ([Errno 8] nodename nor servname provided, or not known)"))
+[2026-08-14 16:57:33] [ERROR] [TradingBot.DataCollector]: Error requesting historical data for TSM: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/TSM/bars?timeframe=1Hour&start=2026-06-30T05%3A57%3A33Z&end=2026-08-14T05%3A57%3A33Z&limit=10000&adjustment=all&feed=iex (Caused by NameResolutionError("HTTPSConnection(host='data.alpaca.markets', port=443): Failed to resolve 'data.alpaca.markets' ([Errno 8] nodename nor servname provided, or not known)"))
+[2026-08-14 16:57:33] [ERROR] [TradingBot.DataCollector]: Error requesting historical data for TQQQ: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/TQQQ/bars?timeframe=1Hour&start=2026-06-30T05%3A57%3A33Z&end=2026-08-14T05%3A57%3A33Z&limit=10000&adjustment=all&feed=iex (Caused by NameResolutionError("HTTPSConnection(host='data.alpaca.markets', port=443): Failed to resolve 'data.alpaca.markets' ([Errno 8] nodename nor servname provided, or not known)"))
+[2026-08-14 16:57:33] [ERROR] [TradingBot.DataCollector]: Error requesting historical data for SOXL: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/SOXL/bars?timeframe=1Hour&start=2026-06-30T05%3A57%3A33Z&end=2026-08-14T05%3A57%3A33Z&limit=10000&adjustment=all&feed=iex (Caused by NameResolutionError("HTTPSConnection(host='data.alpaca.markets', port=443): Failed to resolve 'data.alpaca.markets' ([Errno 8] nodename nor servname provided, or not known)"))
+[2026-08-14 16:57:33] [INFO] [TradingBot]: Warm-up historical candles (1Hour) loaded successfully.
+[2026-08-14 16:57:33] [INFO] [TradingBot]: Starting live market data stream subscriber...
+[2026-08-14 16:57:33] [INFO] [TradingBot.DataCollector]: Subscribing to real-time stream for symbols: ['AAPL', 'NVDA', 'MSFT', 'AMD', 'DRAM', 'TSM', 'TQQQ', 'SOXL']
+[2026-08-14 16:57:33] [INFO] [TradingBot.DataCollector]: Alpaca WebSocket stream connected.
+[2026-08-14 16:57:33] [INFO] [TradingBot.HealthMonitor]: Health monitor service started (Interval: 60 minutes)
+[2026-08-14 16:57:43] [INFO] [TradingBot]: Initializing Algorithmic Day Trading Engine (Multi-Strategy Asset Router)...
+[2026-08-14 16:57:43] [INFO] [TradingBot]: Mode: PAPER | Base URL: https://paper-api.alpaca.markets
+[2026-08-14 16:57:43] [INFO] [TradingBot]: Symbol Routing: AAPL -> Strategy [Swing_TrendPullback]
+[2026-08-14 16:57:43] [INFO] [TradingBot]: Symbol Routing: NVDA -> Strategy [Swing_TrendPullback]
+[2026-08-14 16:57:43] [INFO] [TradingBot]: Symbol Routing: MSFT -> Strategy [Swing_Breakout]
+[2026-08-14 16:57:43] [INFO] [TradingBot]: Symbol Routing: AMD -> Strategy [Swing_Breakout]
+[2026-08-14 16:57:43] [INFO] [TradingBot]: Symbol Routing: DRAM -> Strategy [Swing_TrendPullback]
+[2026-08-14 16:57:43] [INFO] [TradingBot]: Symbol Routing: TSM -> Strategy [Swing_Breakout]
+[2026-08-14 16:57:43] [INFO] [TradingBot]: Symbol Routing: TQQQ -> Strategy [Swing_Breakout]
+[2026-08-14 16:57:43] [INFO] [TradingBot]: Symbol Routing: SOXL -> Strategy [Swing_Breakout]
+[2026-08-14 16:57:43] [INFO] [TradingBot]: Connected to Alpaca Account. Equity: $97,269.75
+[2026-08-14 16:57:44] [INFO] [TradingBot.DataCollector]: Fetched 208 historical bars for AAPL (1Hour)
+[2026-08-14 16:57:45] [INFO] [TradingBot.DataCollector]: Fetched 211 historical bars for NVDA (1Hour)
+[2026-08-14 16:57:46] [INFO] [TradingBot.DataCollector]: Fetched 215 historical bars for MSFT (1Hour)
+[2026-08-14 16:57:47] [INFO] [TradingBot.DataCollector]: Fetched 214 historical bars for AMD (1Hour)
+[2026-08-14 16:57:48] [INFO] [TradingBot.DataCollector]: Fetched 217 historical bars for DRAM (1Hour)
+[2026-08-14 16:57:49] [INFO] [TradingBot.DataCollector]: Fetched 212 historical bars for TSM (1Hour)
+[2026-08-14 16:57:49] [INFO] [TradingBot.DataCollector]: Fetched 225 historical bars for TQQQ (1Hour)
+[2026-08-14 16:57:50] [INFO] [TradingBot.DataCollector]: Fetched 223 historical bars for SOXL (1Hour)
+[2026-08-14 16:57:50] [INFO] [TradingBot]: Warm-up historical candles (1Hour) loaded successfully.
+[2026-08-14 16:57:50] [INFO] [TradingBot]: Starting live market data stream subscriber...
+[2026-08-14 16:57:50] [INFO] [TradingBot.DataCollector]: Subscribing to real-time stream for symbols: ['AAPL', 'NVDA', 'MSFT', 'AMD', 'DRAM', 'TSM', 'TQQQ', 'SOXL']
+[2026-08-14 16:57:50] [INFO] [TradingBot.DataCollector]: Alpaca WebSocket stream connected.
+[2026-08-14 16:57:50] [INFO] [TradingBot.HealthMonitor]: Health monitor service started (Interval: 60 minutes)
+[2026-08-15 02:45:00] [WARNING] [TradingBot.HorizonFlusher]: ⚡ 1-WEEK HORIZON FLUSH TRIGGERED on Friday at 15:45:00 EST! Liquidating open positions before weekend market close.
+[2026-08-17 20:39:04] [INFO] [TradingBot]: Initializing Algorithmic Day Trading Engine (Multi-Strategy Asset Router)...
+[2026-08-17 20:39:04] [INFO] [TradingBot]: Mode: PAPER | Base URL: https://paper-api.alpaca.markets
+[2026-08-17 20:39:04] [INFO] [TradingBot]: Symbol Routing: AAPL -> Strategy [Swing_TrendPullback]
+[2026-08-17 20:39:04] [INFO] [TradingBot]: Symbol Routing: NVDA -> Strategy [Swing_TrendPullback]
+[2026-08-17 20:39:04] [INFO] [TradingBot]: Symbol Routing: MSFT -> Strategy [Swing_Breakout]
+[2026-08-17 20:39:04] [INFO] [TradingBot]: Symbol Routing: AMD -> Strategy [Swing_Breakout]
+[2026-08-17 20:39:04] [INFO] [TradingBot]: Symbol Routing: DRAM -> Strategy [Swing_TrendPullback]
+[2026-08-17 20:39:04] [INFO] [TradingBot]: Symbol Routing: TSM -> Strategy [Swing_Breakout]
+[2026-08-17 20:39:04] [INFO] [TradingBot]: Symbol Routing: TQQQ -> Strategy [Swing_Breakout]
+[2026-08-17 20:39:04] [INFO] [TradingBot]: Symbol Routing: SOXL -> Strategy [Swing_Breakout]
+[2026-08-17 20:39:04] [ERROR] [TradingBot.OrderController]: Account fetch exception: HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/account (Caused by NameResolutionError("HTTPSConnection(host='paper-api.alpaca.markets', port=443): Failed to resolve 'paper-api.alpaca.markets' ([Errno 8] nodename nor servname provided, or not known)"))
+[2026-08-17 20:39:04] [WARNING] [TradingBot]: Could not fetch valid Alpaca equity. Assuming paper mode default ($100,000.00).
+[2026-08-17 20:39:04] [ERROR] [TradingBot.DataCollector]: Error requesting historical data for AAPL: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/AAPL/bars?timeframe=1Hour&start=2026-07-03T09%3A39%3A04Z&end=2026-08-17T09%3A39%3A04Z&limit=10000&adjustment=all&feed=iex (Caused by NameResolutionError("HTTPSConnection(host='data.alpaca.markets', port=443): Failed to resolve 'data.alpaca.markets' ([Errno 8] nodename nor servname provided, or not known)"))
+[2026-08-17 20:39:04] [ERROR] [TradingBot.DataCollector]: Error requesting historical data for NVDA: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/NVDA/bars?timeframe=1Hour&start=2026-07-03T09%3A39%3A04Z&end=2026-08-17T09%3A39%3A04Z&limit=10000&adjustment=all&feed=iex (Caused by NameResolutionError("HTTPSConnection(host='data.alpaca.markets', port=443): Failed to resolve 'data.alpaca.markets' ([Errno 8] nodename nor servname provided, or not known)"))
+[2026-08-17 20:39:04] [ERROR] [TradingBot.DataCollector]: Error requesting historical data for MSFT: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/MSFT/bars?timeframe=1Hour&start=2026-07-03T09%3A39%3A04Z&end=2026-08-17T09%3A39%3A04Z&limit=10000&adjustment=all&feed=iex (Caused by NameResolutionError("HTTPSConnection(host='data.alpaca.markets', port=443): Failed to resolve 'data.alpaca.markets' ([Errno 8] nodename nor servname provided, or not known)"))
+[2026-08-17 20:39:04] [ERROR] [TradingBot.DataCollector]: Error requesting historical data for AMD: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/AMD/bars?timeframe=1Hour&start=2026-07-03T09%3A39%3A04Z&end=2026-08-17T09%3A39%3A04Z&limit=10000&adjustment=all&feed=iex (Caused by NameResolutionError("HTTPSConnection(host='data.alpaca.markets', port=443): Failed to resolve 'data.alpaca.markets' ([Errno 8] nodename nor servname provided, or not known)"))
+[2026-08-17 20:39:04] [ERROR] [TradingBot.DataCollector]: Error requesting historical data for DRAM: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/DRAM/bars?timeframe=1Hour&start=2026-07-03T09%3A39%3A04Z&end=2026-08-17T09%3A39%3A04Z&limit=10000&adjustment=all&feed=iex (Caused by NameResolutionError("HTTPSConnection(host='data.alpaca.markets', port=443): Failed to resolve 'data.alpaca.markets' ([Errno 8] nodename nor servname provided, or not known)"))
+[2026-08-17 20:39:04] [ERROR] [TradingBot.DataCollector]: Error requesting historical data for TSM: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/TSM/bars?timeframe=1Hour&start=2026-07-03T09%3A39%3A04Z&end=2026-08-17T09%3A39%3A04Z&limit=10000&adjustment=all&feed=iex (Caused by NameResolutionError("HTTPSConnection(host='data.alpaca.markets', port=443): Failed to resolve 'data.alpaca.markets' ([Errno 8] nodename nor servname provided, or not known)"))
+[2026-08-17 20:39:04] [ERROR] [TradingBot.DataCollector]: Error requesting historical data for TQQQ: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/TQQQ/bars?timeframe=1Hour&start=2026-07-03T09%3A39%3A04Z&end=2026-08-17T09%3A39%3A04Z&limit=10000&adjustment=all&feed=iex (Caused by NameResolutionError("HTTPSConnection(host='data.alpaca.markets', port=443): Failed to resolve 'data.alpaca.markets' ([Errno 8] nodename nor servname provided, or not known)"))
+[2026-08-17 20:39:04] [ERROR] [TradingBot.DataCollector]: Error requesting historical data for SOXL: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/SOXL/bars?timeframe=1Hour&start=2026-07-03T09%3A39%3A04Z&end=2026-08-17T09%3A39%3A04Z&limit=10000&adjustment=all&feed=iex (Caused by NameResolutionError("HTTPSConnection(host='data.alpaca.markets', port=443): Failed to resolve 'data.alpaca.markets' ([Errno 8] nodename nor servname provided, or not known)"))
+[2026-08-17 20:39:04] [INFO] [TradingBot]: Warm-up historical candles (1Hour) loaded successfully.
+[2026-08-17 20:39:04] [INFO] [TradingBot]: Starting live market data stream subscriber...
+[2026-08-17 20:39:04] [INFO] [TradingBot.DataCollector]: Subscribing to real-time stream for symbols: ['AAPL', 'NVDA', 'MSFT', 'AMD', 'DRAM', 'TSM', 'TQQQ', 'SOXL']
+[2026-08-17 20:39:04] [INFO] [TradingBot.DataCollector]: Alpaca WebSocket stream connected.
+[2026-08-17 20:39:04] [INFO] [TradingBot.HealthMonitor]: Health monitor service started (Interval: 60 minutes)
+[2026-08-17 20:39:34] [INFO] [TradingBot]: Initializing Algorithmic Day Trading Engine (Multi-Strategy Asset Router)...
+[2026-08-17 20:39:34] [INFO] [TradingBot]: Mode: PAPER | Base URL: https://paper-api.alpaca.markets
+[2026-08-17 20:39:34] [INFO] [TradingBot]: Symbol Routing: AAPL -> Strategy [Swing_TrendPullback]
+[2026-08-17 20:39:34] [INFO] [TradingBot]: Symbol Routing: NVDA -> Strategy [Swing_TrendPullback]
+[2026-08-17 20:39:34] [INFO] [TradingBot]: Symbol Routing: MSFT -> Strategy [Swing_Breakout]
+[2026-08-17 20:39:34] [INFO] [TradingBot]: Symbol Routing: AMD -> Strategy [Swing_Breakout]
+[2026-08-17 20:39:34] [INFO] [TradingBot]: Symbol Routing: DRAM -> Strategy [Swing_TrendPullback]
+[2026-08-17 20:39:34] [INFO] [TradingBot]: Symbol Routing: TSM -> Strategy [Swing_Breakout]
+[2026-08-17 20:39:34] [INFO] [TradingBot]: Symbol Routing: TQQQ -> Strategy [Swing_Breakout]
+[2026-08-17 20:39:34] [INFO] [TradingBot]: Symbol Routing: SOXL -> Strategy [Swing_Breakout]
+[2026-08-17 20:39:35] [INFO] [TradingBot]: Connected to Alpaca Account. Equity: $97,269.75
+[2026-08-17 20:39:36] [INFO] [TradingBot.DataCollector]: Fetched 208 historical bars for AAPL (1Hour)
+[2026-08-17 20:39:37] [INFO] [TradingBot.DataCollector]: Fetched 210 historical bars for NVDA (1Hour)
+[2026-08-17 20:39:38] [INFO] [TradingBot.DataCollector]: Fetched 212 historical bars for MSFT (1Hour)
+[2026-08-17 20:39:39] [INFO] [TradingBot.DataCollector]: Fetched 213 historical bars for AMD (1Hour)
+[2026-08-17 20:39:40] [INFO] [TradingBot.DataCollector]: Fetched 217 historical bars for DRAM (1Hour)
+[2026-08-17 20:39:41] [INFO] [TradingBot.DataCollector]: Fetched 207 historical bars for TSM (1Hour)
+[2026-08-17 20:39:42] [INFO] [TradingBot.DataCollector]: Fetched 224 historical bars for TQQQ (1Hour)
+[2026-08-17 20:39:43] [INFO] [TradingBot.DataCollector]: Fetched 221 historical bars for SOXL (1Hour)
+[2026-08-17 20:39:43] [INFO] [TradingBot]: Warm-up historical candles (1Hour) loaded successfully.
+[2026-08-17 20:39:43] [INFO] [TradingBot]: Starting live market data stream subscriber...
+[2026-08-17 20:39:43] [INFO] [TradingBot.DataCollector]: Subscribing to real-time stream for symbols: ['AAPL', 'NVDA', 'MSFT', 'AMD', 'DRAM', 'TSM', 'TQQQ', 'SOXL']
+[2026-08-17 20:39:43] [INFO] [TradingBot.DataCollector]: Alpaca WebSocket stream connected.
+[2026-08-17 20:39:43] [INFO] [TradingBot.HealthMonitor]: Health monitor service started (Interval: 60 minutes)
+[2026-08-17 21:54:00] [INFO] [TradingBot]: BUY Signal Triggered for TQQQ using [Swing_Breakout]! Swing 20-Period High Breakout (Close: $77.34 > Donchian: $74.97, Vol: 163080 > Avg: 134157)
+[2026-08-17 21:54:02] [INFO] [TradingBot.RiskManager]: Position Sizing: Risk=$1945.39 | Risk/Share=$2.57 -> Sized Shares: 188 ($14,539.92)
+[2026-08-17 21:54:02] [INFO] [TradingBot.OrderController]: Submitting BUY Bracket Order: TQQQ x 188 | SL: $74.77 | TP: $83.77
+[2026-08-17 21:54:02] [INFO] [TradingBot.OrderController]: Bracket Order successfully placed! ID: 83ceeb0c-7bc5-4410-b014-9e231f53cd6f
+[2026-08-17 21:54:02] [INFO] [TradingBot.RiskManager]: Recorded day trade at 2026-08-17 10:54:02 EST. Rolling count: 1
+[2026-08-17 21:56:00] [INFO] [TradingBot]: BUY Signal Triggered for TQQQ using [Swing_Breakout]! Swing 20-Period High Breakout (Close: $77.37 > Donchian: $74.97, Vol: 165547 > Avg: 134157)
+[2026-08-17 21:56:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for TQQQ: Position already open for TQQQ.
+[2026-08-17 21:57:00] [INFO] [TradingBot]: BUY Signal Triggered for TQQQ using [Swing_Breakout]! Swing 20-Period High Breakout (Close: $77.40 > Donchian: $74.97, Vol: 165848 > Avg: 134157)
+[2026-08-17 21:57:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for TQQQ: Position already open for TQQQ.
+[2026-08-17 21:58:00] [INFO] [TradingBot]: BUY Signal Triggered for TQQQ using [Swing_Breakout]! Swing 20-Period High Breakout (Close: $77.46 > Donchian: $74.97, Vol: 167862 > Avg: 134157)
+[2026-08-17 21:58:00] [WARNING] [TradingBot]: Trade blocked by Risk Manager for TQQQ: Position already open for TQQQ.
+[2026-08-17 21:59:00] [INFO] [TradingBot]: BUY Signal Triggered for TQQQ using [Swing_Breakout]! Swing 20-Period High Breakout (Close: $77.56 > Donchian: $74.97, Vol: 172105 > Avg: 134157)
+[2026-08-17 21:59:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for TQQQ: Position already open for TQQQ.
+[2026-08-17 22:00:00] [INFO] [TradingBot]: BUY Signal Triggered for TQQQ using [Swing_Breakout]! Swing 20-Period High Breakout (Close: $77.58 > Donchian: $74.97, Vol: 174434 > Avg: 134157)
+[2026-08-17 22:00:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for TQQQ: Position already open for TQQQ.
+[2026-08-17 22:53:00] [INFO] [TradingBot]: BUY Signal Triggered for AMD using [Swing_Breakout]! Swing 20-Period High Breakout (Close: $514.60 > Donchian: $514.48, Vol: 107109 > Avg: 81606)
+[2026-08-17 22:53:02] [INFO] [TradingBot.RiskManager]: Position Sizing: Risk=$1946.25 | Risk/Share=$24.13 -> Sized Shares: 28 ($14,408.80)
+[2026-08-17 22:53:02] [INFO] [TradingBot.OrderController]: Submitting BUY Bracket Order: AMD x 28 | SL: $490.47 | TP: $574.92
+[2026-08-17 22:53:02] [INFO] [TradingBot.OrderController]: Bracket Order successfully placed! ID: e9a082ca-b722-47b3-aa43-22f2b3d3b3f3
+[2026-08-17 22:53:02] [INFO] [TradingBot.RiskManager]: Recorded day trade at 2026-08-17 11:53:02 EST. Rolling count: 2
+[2026-08-17 22:54:00] [INFO] [TradingBot]: BUY Signal Triggered for AMD using [Swing_Breakout]! Swing 20-Period High Breakout (Close: $514.81 > Donchian: $514.48, Vol: 109185 > Avg: 81606)
+[2026-08-17 22:54:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for AMD: Position already open for AMD.
+[2026-08-17 22:55:00] [INFO] [TradingBot]: BUY Signal Triggered for AMD using [Swing_Breakout]! Swing 20-Period High Breakout (Close: $514.88 > Donchian: $514.48, Vol: 109656 > Avg: 81606)
+[2026-08-17 22:55:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for AMD: Position already open for AMD.
+[2026-08-17 22:57:00] [INFO] [TradingBot]: BUY Signal Triggered for TSM using [Swing_Breakout]! Swing 20-Period High Breakout (Close: $434.61 > Donchian: $432.38, Vol: 74007 > Avg: 61450)
+[2026-08-17 22:57:02] [INFO] [TradingBot.RiskManager]: Position Sizing: Risk=$1945.85 | Risk/Share=$11.35 -> Sized Shares: 33 ($14,342.13)
+[2026-08-17 22:57:02] [INFO] [TradingBot.OrderController]: Submitting BUY Bracket Order: TSM x 33 | SL: $423.26 | TP: $462.99
+[2026-08-17 22:57:02] [INFO] [TradingBot.OrderController]: Bracket Order successfully placed! ID: be3946ae-d6d1-4340-bcad-73b7d761626b
+[2026-08-17 22:57:02] [INFO] [TradingBot.RiskManager]: Recorded day trade at 2026-08-17 11:57:02 EST. Rolling count: 3
+[2026-08-17 22:58:00] [INFO] [TradingBot]: BUY Signal Triggered for TSM using [Swing_Breakout]! Swing 20-Period High Breakout (Close: $434.88 > Donchian: $432.38, Vol: 74445 > Avg: 61450)
+[2026-08-17 22:58:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for TSM: Position already open for TSM.
+[2026-08-17 22:59:00] [INFO] [TradingBot]: BUY Signal Triggered for TSM using [Swing_Breakout]! Swing 20-Period High Breakout (Close: $434.87 > Donchian: $432.38, Vol: 74949 > Avg: 61450)
+[2026-08-17 22:59:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for TSM: Position already open for TSM.
+[2026-08-17 23:00:00] [INFO] [TradingBot]: BUY Signal Triggered for TSM using [Swing_Breakout]! Swing 20-Period High Breakout (Close: $434.79 > Donchian: $432.38, Vol: 75618 > Avg: 61450)
+[2026-08-17 23:00:01] [WARNING] [TradingBot]: Trade blocked by Risk Manager for TSM: Position already open for TSM.

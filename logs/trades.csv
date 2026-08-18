@@ -1,0 +1,4 @@
+Trade_ID,Date,Symbol,Strategy,Side,Qty,Entry_Time,Entry_Price,Exit_Time,Exit_Price,Stop_Loss,Take_Profit,Realized_PL,Return_Pct,Holding_Duration,Exit_Reason,Status
+83ceeb0c-7bc5-4410-b014-9e231f53cd6f,2026-08-18,TQQQ,Swing_Breakout,BUY,188,2026-08-18 00:15:51 EST,77.33,-,-,74.77,83.77,-,-,-,-,OPEN
+e9a082ca-b722-47b3-aa43-22f2b3d3b3f3,2026-08-18,AMD,Swing_Breakout,BUY,28,2026-08-18 00:15:51 EST,514.69,-,-,490.47,574.92,-,-,-,-,OPEN
+be3946ae-d6d1-4340-bcad-73b7d761626b,2026-08-18,TSM,Swing_Breakout,BUY,33,2026-08-18 00:15:51 EST,434.64,-,-,423.26,462.99,-,-,-,-,OPEN
